@@ -4,8 +4,25 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-      xmlns:f="http://xmlns.jcp.org/jsf/core">
-<f:view>
-    <h:outputLabel value="Hello, world"/>
-</f:view>
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+    <title>Sistema Congregación</title>
+</h:head>
+<h:body>
+    <h:form>
+        <p:growl id="growl" sticky="true" showDetail="true" life="3000"/>
+        <h:panelGrid columns="2" cellpadding="5">
+            <h:outputLabel for="username" value="Username:"/>
+            <p:inputText id="username" value="#{loginBean.username}" required="true" label="username"/>
+
+            <h:outputLabel for="password" value="Password:"/>
+            <p:password id="password" value="#{loginBean.password}" required="true" label="password"/>
+
+            <f:facet name="footer">
+                <p:commandButton value="Login" action="home?faces-redirect=true"/>
+            </f:facet>
+        </h:panelGrid>
+    </h:form>
+</h:body>
 </html>

@@ -2,7 +2,8 @@
 <persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
 
     <persistence-unit name="Persistencia">
-        <!--<class>es.rostan.hibernate.entidades.persona</class>-->
+
+        <class>es.desarrollo.hibernate.entities.usuario</class>
 
         <properties>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
