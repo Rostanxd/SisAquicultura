@@ -22,37 +22,67 @@
     <schema id="16" parent="1" name="mysql"/>
     <schema id="17" parent="1" name="performance_schema"/>
     <schema id="18" parent="1" name="test"/>
-    <table id="19" parent="2" name="usuario"/>
-    <column id="20" parent="19" name="usr_codigo">
+    <table id="19" parent="2" name="sis_accesos"/>
+    <table id="20" parent="2" name="sis_usuarios"/>
+    <column id="21" parent="19" name="acc_codigo">
       <Position>1</Position>
-      <DataType>char(10)|0</DataType>
+      <DataType>varchar(2)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="21" parent="19" name="usr_clave">
-      <Position>2</Position>
-      <DataType>char(25)|0</DataType>
+    <column id="22" parent="19" name="acc_fec_creacion">
+      <Position>3</Position>
+      <DataType>datetime|0</DataType>
     </column>
-    <column id="22" parent="19" name="usr_fec_creacion">
+    <column id="23" parent="19" name="acc_fec_modificacion">
       <Position>4</Position>
       <DataType>datetime|0</DataType>
     </column>
-    <column id="23" parent="19" name="usr_fec_modificacion">
+    <column id="24" parent="19" name="acc_nombre">
+      <Position>2</Position>
+      <DataType>varchar(25)|0</DataType>
+    </column>
+    <column id="25" parent="19" name="acc_usr_creacion">
+      <Position>5</Position>
+      <DataType>varchar(10)|0</DataType>
+    </column>
+    <column id="26" parent="19" name="acc_usr_modificacion">
+      <Position>6</Position>
+      <DataType>varchar(10)|0</DataType>
+    </column>
+    <key id="27" parent="19" name="PRIMARY">
+      <ColNames>acc_codigo</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="28" parent="20" name="usr_codigo">
+      <Position>1</Position>
+      <DataType>varchar(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="29" parent="20" name="usr_clave">
+      <Position>2</Position>
+      <DataType>varchar(25)|0</DataType>
+    </column>
+    <column id="30" parent="20" name="usr_estado">
+      <Position>3</Position>
+      <DataType>varchar(1)|0</DataType>
+    </column>
+    <column id="31" parent="20" name="usr_fec_creacion">
+      <Position>4</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="32" parent="20" name="usr_fec_modificacion">
       <Position>5</Position>
       <DataType>datetime|0</DataType>
     </column>
-    <column id="24" parent="19" name="usr_usr_modificacion">
+    <column id="33" parent="20" name="usr_usr_modificacion">
       <Position>6</Position>
-      <DataType>char(10)|0</DataType>
+      <DataType>varchar(10)|0</DataType>
     </column>
-    <column id="25" parent="19" name="usr_usr_creacion">
+    <column id="34" parent="20" name="usr_usr_creacion">
       <Position>7</Position>
-      <DataType>char(10)|0</DataType>
+      <DataType>varchar(10)|0</DataType>
     </column>
-    <column id="26" parent="19" name="usr_estado">
-      <Position>3</Position>
-      <DataType>char(1)|0</DataType>
-    </column>
-    <key id="27" parent="19" name="PRIMARY">
+    <key id="35" parent="20" name="PRIMARY">
       <ColNames>usr_codigo</ColNames>
       <Primary>1</Primary>
     </key>

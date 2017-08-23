@@ -3,12 +3,14 @@ package es.desarrollo.hibernate.entities;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 import java.util.Date;
 
 /**
  * Created by Rostan on 22/08/2017.
  */
 @Entity
+@Table(name = "sis_usuarios")
 public class usuario {
 
     @Id
@@ -28,7 +30,7 @@ public class usuario {
     private Date fechaCreacion;
 
     @Column(name = "usr_usr_modificacion", length = 10)
-    private String usrModifica;
+    private String usrModificacion;
 
     @Column(name = "usr_fec_modificacion")
     private Date fechaModificacion;
@@ -40,6 +42,20 @@ public class usuario {
     public usuario(String id, String clave) {
         this.id = id;
         this.clave = clave;
+    }
+
+    //    METODOS
+    @Override
+    public String toString() {
+        return "usuario{" +
+                "id='" + id + '\'' +
+                ", clave='" + clave + '\'' +
+                ", estado='" + estado + '\'' +
+                ", usuarioCreacion='" + usuarioCreacion + '\'' +
+                ", fechaCreacion=" + fechaCreacion +
+                ", usrModificacion='" + usrModificacion + '\'' +
+                ", fechaModificacion=" + fechaModificacion +
+                '}';
     }
 
     //    GETTER Y SETTER
@@ -83,12 +99,12 @@ public class usuario {
         this.fechaCreacion = fechaCreacion;
     }
 
-    public String getUsrModifica() {
-        return usrModifica;
+    public String getUsrModificacion() {
+        return usrModificacion;
     }
 
-    public void setUsrModifica(String usrModifica) {
-        this.usrModifica = usrModifica;
+    public void setUsrModificacion(String usrModificacion) {
+        this.usrModificacion = usrModificacion;
     }
 
     public Date getFechaModificacion() {
@@ -98,4 +114,5 @@ public class usuario {
     public void setFechaModificacion(Date fechaModificacion) {
         this.fechaModificacion = fechaModificacion;
     }
+
 }

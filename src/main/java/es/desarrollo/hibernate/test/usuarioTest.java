@@ -19,7 +19,7 @@ public class usuarioTest {
         List<usuario> usuarios = usuarioDAO.listarUsuarios();
         System.out.println("Usuarios en el sistema...");
         for (usuario u : usuarios) {
-            System.out.println("    - " + u.getId());
+            System.out.println("    - " + u.toString());
         }
     }
 }
