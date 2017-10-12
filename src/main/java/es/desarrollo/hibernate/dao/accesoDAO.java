@@ -19,11 +19,11 @@ public class accesoDAO {
      * @param usuario usuario que esta logueando en el sistema
      * @return retorna el acceso del mismo
      */
-    public acceso accesosUsuario(usuario usuario){
+    public List<accesoDetalle> accesosUsuario(usuario usuario){
         EntityManager em = emf.createEntityManager();
-        Query qry = em.createQuery("SELECT a FROM acceso AS a WHERE a.id = :acc_usuario");
-        qry.setParameter("acc_usuario", usuario.getAcceso());
-        return (acceso) qry.getSingleResult();
+        Query qry = em.createQuery("SELECT a FROM accesoDetalle AS a WHERE a.acc_codigo = :acc_codigo");
+        qry.setParameter("acc_codigo", usuario.getAcceso());
+        return (List<accesoDetalle>) qry.getResultList();
     }
 
 }

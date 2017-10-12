@@ -32,6 +32,9 @@ public class usuario {
     @Column(name = "usr_fec_modificacion")
     private Date fechaModificacion;
 
+    @Column(name = "usr_tipo", length = 1)
+    private String tipo;
+
     @OneToOne
     @JoinColumn(name = "acc_codigo")
     private acceso acceso;
@@ -123,5 +126,13 @@ public class usuario {
 
     public void setAcceso(es.desarrollo.hibernate.entities.acceso acceso) {
         this.acceso = acceso;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
     }
 }

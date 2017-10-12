@@ -113,4 +113,8 @@ public class programa {
     public void setFechaModificacion(Date fechaModificacion) {
         this.fechaModificacion = fechaModificacion;
     }
+
+    public es.desarrollo.hibernate.entities.modulo getModulo() {
+        return modulo;
+    }
 }

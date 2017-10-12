@@ -22,7 +22,7 @@ public class moduloDAO {
         EntityManager em = emf.createEntityManager();
         Query qry;
 
-        if (tipoUsuario.equals("S")) {
+        if (tipoUsuario.equals("A")) {
             qry = em.createQuery("SELECT m FROM modulo as m");
         }else{
             qry = em.createQuery("SELECT m FROM modulo as m WHERE m.tipo = 'U'");

@@ -15,6 +15,13 @@ public class usuarioDAO {
 
     private EntityManagerFactory emf = Persistence.createEntityManagerFactory("Persistencia");
 
+    public usuario buscaUsuarioId(String id){
+        EntityManager em = emf.createEntityManager();
+        Query qry = em.createQuery("SELECT u FROM usuario AS u WHERE u.id = :idUsuario");
+        qry.setParameter("idUsuario", id);
+        return (usuario) qry.getSingleResult();
+    }
+
     public usuario validaUsuario(usuario usr) {
         usuario usuario = null;
         try {
