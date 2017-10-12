@@ -7,20 +7,27 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core"
       xmlns:p="http://primefaces.org/ui">
 <h:head>
-    <title>Sistema Congregación</title>
+    <title>Sistema de Aquicultura 1.0</title>
 </h:head>
 <h:body>
+    <div style="background-color: cadetblue; height: 50px">
+        <div style="padding-left: 10px">
+            <strong>
+                <h:outputLabel style="text-align: center; font-family: 'Courier New'; font-size: x-large; color: white; line-height: 50px" value="Sistema Aquicultura 1.0"/>
+            </strong>
+        </div>
+    </div>
     <h:form>
         <p:growl id="growl" sticky="true" showDetail="true" life="3000"/>
         <h:panelGrid columns="2" cellpadding="5">
-            <h:outputLabel for="username" value="Username:"/>
+            <h:outputLabel for="username" value="Usuario:"/>
             <p:inputText id="username" value="#{usuarioBean.usuario.id}" required="true" label="username"/>
 
-            <h:outputLabel for="password" value="Password:"/>
+            <h:outputLabel for="password" value="Clave:"/>
             <p:password id="password" value="#{usuarioBean.usuario.clave}" required="true" label="password"/>
 
             <f:facet name="footer">
-                <p:commandButton value="Login" update="growl" action="#{usuarioBean.usuarioLogin()}"
+                <p:commandButton value="Ingresar" update="growl" action="#{usuarioBean.usuarioLogin()}"
                                  oncomplete="handleLoginRequest(xhr, status, args)" />
             </f:facet>
         </h:panelGrid>

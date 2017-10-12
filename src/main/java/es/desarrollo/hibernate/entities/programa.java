@@ -4,45 +4,52 @@ import javax.persistence.*;
 import java.util.Date;
 import java.util.Set;
 
-/**
- * Created by Rostan on 23/08/2017.
- */
 @Entity
-@Table(name = "sis_accesos")
-public class acceso {
+@Table(name = "sis_programas")
+public class programa {
 
     @Id
-    @Column(name = "acc_codigo", length = 2)
+    @Column(name = "prg_codigo", length = 3)
     private String id;
 
-    @Column(name = "acc_nombre", length = 25)
+    @Column(name = "prg_nombre", length = 25)
     private String nombre;
 
-    @Column(name = "acc_usr_creacion", length = 10)
+    @Column(name = "prg_estado", length = 1)
+    private String estado;
+
+    @Column(name = "prg_usr_creacion", length = 10)
     private String usuarioCreacion;
 
-    @Column(name = "acc_fec_creacion")
+    @Column(name = "prg_fec_creacion")
     private Date fechaCreacion;
 
-    @Column(name = "acc_usr_modificacion", length = 10)
+    @Column(name = "prg_usr_modificacion", length = 10)
     private String usuarioModificacion;
 
-    @Column(name = "acc_fec_modificacion")
+    @Column(name = "prg_fec_modificacion", length = 10)
     private Date fechaModificacion;
 
 //    RELACIONES
-    @OneToMany(mappedBy = "acceso", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    private Set<accesoDetalle> detalles;
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "mod_codigo", updatable = false, insertable = false,
+            referencedColumnName = "mod_codigo")
+    private modulo modulo;
+
+    @OneToMany(mappedBy = "programa", cascade = CascadeType.ALL)
+    private Set<accesoDetalle> accesoDetalles;
 
 //    CONSTRUCTOR
-    public acceso() {}
+    public programa() {
+    }
 
 //    METODOS
     @Override
     public String toString() {
-        return "acceso{" +
+        return "programa{" +
                 "id='" + id + '\'' +
                 ", nombre='" + nombre + '\'' +
+                ", estado='" + estado + '\'' +
                 ", usuarioCreacion='" + usuarioCreacion + '\'' +
                 ", fechaCreacion=" + fechaCreacion +
                 ", usuarioModificacion='" + usuarioModificacion + '\'' +
@@ -50,7 +57,7 @@ public class acceso {
                 '}';
     }
 
-    //    GETTER Y SETTER
+//    GETTER Y SETTER
     public String getId() {
         return id;
     }
@@ -65,6 +72,14 @@ public class acceso {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
     }
 
     public String getUsuarioCreacion() {

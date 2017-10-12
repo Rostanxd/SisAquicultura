@@ -1,9 +1,6 @@
 package es.desarrollo.hibernate.entities;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.Date;
 
 /**
@@ -35,13 +32,18 @@ public class usuario {
     @Column(name = "usr_fec_modificacion")
     private Date fechaModificacion;
 
+    @OneToOne
+    @JoinColumn(name = "acc_codigo")
+    private acceso acceso;
+
     //    CONSTRUCTOR
     public usuario() {
     }
 
-    public usuario(String id, String clave) {
+    public usuario(String id, String clave, acceso acceso) {
         this.id = id;
         this.clave = clave;
+        this.acceso = acceso;
     }
 
     //    METODOS
@@ -115,4 +117,11 @@ public class usuario {
         this.fechaModificacion = fechaModificacion;
     }
 
+    public es.desarrollo.hibernate.entities.acceso getAcceso() {
+        return acceso;
+    }
+
+    public void setAcceso(es.desarrollo.hibernate.entities.acceso acceso) {
+        this.acceso = acceso;
+    }
 }
