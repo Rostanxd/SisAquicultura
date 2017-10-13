@@ -48,7 +48,7 @@ public class menuBean {
 
 //        Genero la lista de modulos del usuario, por el tipo de usuario.
         moduloDAO moduloDAO = new moduloDAO();
-        this.modulos = moduloDAO.listarModulosSistema(this.usuario.getTipo());
+        this.modulos = moduloDAO.listarModulosTipoUsuario(this.usuario.getTipo());
 
         model = new DefaultMenuModel();
         for (modulo m : this.modulos){
@@ -58,12 +58,12 @@ public class menuBean {
             for (accesoDetalle ad : accesoDetalles){
                 System.out.println(ad.toString());
 
-//                if (ad.getPrograma().getModulo().getId().equals(m.getId())){
-//                    DefaultMenuItem item = new DefaultMenuItem(ad.getPrograma().getNombre());
-//                    item.setUrl("http://www.primefaces.org");
-//                    item.setIcon("ui-icon-home");
-//                    submenu.addElement(item);
-//                }
+                if (ad.getPrograma().getModulo().getId().equals(m.getId())){
+                    DefaultMenuItem item = new DefaultMenuItem(ad.getPrograma().getNombre());
+                    item.setUrl(ad.getPrograma().getPagina());
+                    item.setIcon("ui-icon-home");
+                    submenu.addElement(item);
+                }
             }
 
             model.addElement(submenu);

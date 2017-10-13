@@ -6,16 +6,14 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6276b5ab-4ad1-4b3a-ae2f-60ecdadef8b2" name="Default" comment="">
+    <list default="true" id="f6410d87-c4e2-4ee2-a174-ab95fb49780e" name="Default" comment="Commit #7&#10;- Entitades para el control del acceso del usuario&#10;- Mejoras en la interface&#10;- Login validado">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/864a8c12-aa90-4f87-a5d4-f26db8cfa9d3.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/864a8c12-aa90-4f87-a5d4-f26db8cfa9d3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SisAquicultura_war_exploded/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/out/artifacts/SisAquicultura_war_exploded/META-INF/MANIFEST.MF" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SisAquicultura_war_exploded/WEB-INF/classes/dataSources/864a8c12-aa90-4f87-a5d4-f26db8cfa9d3.xml" afterPath="$PROJECT_DIR$/out/artifacts/SisAquicultura_war_exploded/WEB-INF/classes/dataSources/864a8c12-aa90-4f87-a5d4-f26db8cfa9d3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SisAquicultura_war_exploded/WEB-INF/classes/workspace.xml" afterPath="$PROJECT_DIR$/out/artifacts/SisAquicultura_war_exploded/WEB-INF/classes/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/beans/menuBean.java" afterPath="$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/beans/menuBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/beans/usuarioBean.java" afterPath="$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/beans/usuarioBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/templates/plantilla.xhtml" afterPath="$PROJECT_DIR$/web/WEB-INF/templates/plantilla.xhtml" />
     </list>
+    <ignored path="SisAquicultura.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,115 +42,171 @@
         <item name="dbaquicultura@localhost" type="e3449647:DbNodeDescriptor" />
         <item name="dbaquicultura" type="e3449647:DbNodeDescriptor" />
       </path>
-      <path>
-        <item name="" type="eadb38e5:DatabaseStructure$Root" />
-        <item name="dbaquicultura@localhost" type="e3449647:DbNodeDescriptor" />
-        <item name="dbaquicultura" type="e3449647:DbNodeDescriptor" />
-        <item name="sis_usuarios" type="e3449647:DbNodeDescriptor" />
-      </path>
     </expand>
     <select />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="SisAquicultura" />
+  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="usuario.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/entities/usuario.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="23" column="35" lean-forward="false" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
-              <folding>
-                <element signature="e#1581#1582#0" expanded="true" />
-                <element signature="e#1606#1607#0" expanded="true" />
-                <element signature="e#1642#1643#0" expanded="true" />
-                <element signature="e#1670#1671#0" expanded="true" />
-                <element signature="e#1702#1703#0" expanded="true" />
-                <element signature="e#1730#1731#0" expanded="true" />
-                <element signature="e#1772#1773#0" expanded="true" />
-                <element signature="e#1806#1807#0" expanded="true" />
-                <element signature="e#1839#1840#0" expanded="true" />
-                <element signature="e#1868#1869#0" expanded="true" />
-                <element signature="e#1912#1913#0" expanded="true" />
-                <element signature="e#1948#1949#0" expanded="true" />
-                <element signature="e#1990#1991#0" expanded="true" />
-                <element signature="e#2028#2029#0" expanded="true" />
-                <element signature="e#2090#2091#0" expanded="true" />
-                <element signature="e#2144#2145#0" expanded="true" />
-                <element signature="e#2182#2183#0" expanded="true" />
-                <element signature="e#2218#2219#0" expanded="true" />
-                <element signature="e#2274#2275#0" expanded="true" />
-                <element signature="e#2324#2325#0" expanded="true" />
-                <element signature="e#2366#2367#0" expanded="true" />
-                <element signature="e#2404#2405#0" expanded="true" />
-                <element signature="e#2466#2467#0" expanded="true" />
-                <element signature="e#2520#2521#0" expanded="true" />
-                <element signature="e#2562#2563#0" expanded="true" />
-                <element signature="e#2602#2603#0" expanded="true" />
-                <element signature="e#2666#2667#0" expanded="true" />
-                <element signature="e#2724#2725#0" expanded="true" />
-                <element signature="e#2790#2791#0" expanded="true" />
-                <element signature="e#2819#2820#0" expanded="true" />
-                <element signature="e#2896#2897#0" expanded="true" />
-                <element signature="e#2932#2933#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="acceso.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/entities/acceso.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="usuarioBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/beans/usuarioBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="695">
-              <caret line="45" column="50" lean-forward="false" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menuBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/beans/menuBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="652">
-              <caret line="68" column="64" lean-forward="false" selection-start-line="68" selection-start-column="64" selection-end-line="68" selection-end-column="64" />
-              <folding>
-                <element signature="method#addMessage#0;class#menuBean#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="plantilla.xhtml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/templates/plantilla.xhtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="25" column="71" lean-forward="false" selection-start-line="25" selection-start-column="71" selection-end-line="25" selection-end-column="71" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="usuarioDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/dao/usuarioDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="26" column="43" lean-forward="false" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.49490714">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="acceso.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/entities/acceso.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="527">
+                  <caret line="33" column="86" lean-forward="false" selection-start-line="33" selection-start-column="86" selection-end-line="33" selection-end-column="86" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="modulo.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/entities/modulo.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="442">
+                  <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#859#860#0" expanded="true" />
+                    <element signature="e#884#885#0" expanded="true" />
+                    <element signature="e#920#921#0" expanded="true" />
+                    <element signature="e#948#949#0" expanded="true" />
+                    <element signature="e#981#982#0" expanded="true" />
+                    <element signature="e#1010#1011#0" expanded="true" />
+                    <element signature="e#1054#1055#0" expanded="true" />
+                    <element signature="e#1090#1091#0" expanded="true" />
+                    <element signature="e#1121#1122#0" expanded="true" />
+                    <element signature="e#1148#1149#0" expanded="true" />
+                    <element signature="e#1188#1189#0" expanded="true" />
+                    <element signature="e#1220#1221#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="accesoDAO.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/dao/accesoDAO.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="357">
+                  <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <marker date="1507858961051" expanded="true" signature="960:970" ph="{...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="usuario.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/entities/usuario.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="2057">
+                  <caret line="122" column="62" lean-forward="false" selection-start-line="122" selection-start-column="62" selection-end-line="122" selection-end-column="62" />
+                  <folding>
+                    <marker date="1507858961054" expanded="true" signature="762:763" ph="@{...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="plantilla.xhtml" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web/WEB-INF/templates/plantilla.xhtml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="408">
+                  <caret line="24" column="67" lean-forward="false" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.xhtml" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web/index.xhtml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="136">
+                  <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="home.xhtml" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web/home.xhtml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="187">
+                  <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="accesosBean.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/beans/accesosBean.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="187">
+                  <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="moduloDAO.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/dao/moduloDAO.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="357">
+                  <caret line="28" column="9" lean-forward="false" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="menuBean.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/beans/menuBean.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="32">
+                  <caret line="17" column="35" lean-forward="false" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+                  <folding>
+                    <element signature="e#3787#3788#0" expanded="true" />
+                    <element signature="e#3815#3816#0" expanded="true" />
+                    <element signature="e#3883#3884#0" expanded="true" />
+                    <element signature="e#3913#3914#0" expanded="true" />
+                    <element signature="e#3949#3950#0" expanded="true" />
+                    <element signature="e#3981#3982#0" expanded="true" />
+                    <element signature="e#4007#4008#0" expanded="true" />
+                    <element signature="e#4058#4059#0" expanded="true" />
+                    <element signature="e#4086#4087#0" expanded="true" />
+                    <element signature="e#4139#4140#0" expanded="true" />
+                    <element signature="e#4167#4168#0" expanded="true" />
+                    <element signature="e#4220#4221#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="usuarioBean.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/beans/usuarioBean.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="476">
+                  <caret line="28" column="25" lean-forward="false" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -161,16 +215,10 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>gettypename</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
         <option value="Rostan &lt;allowed_g@hotmail.com&gt;" />
-        <option value="Roberth Soriano Borja &lt;allowed_g@hotmail.com&gt;" />
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -183,27 +231,22 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java.es.desarrollo/servicio/Utils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/es/desarrollo/servicio/Utils.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/entities/usuarios.java" />
+        <option value="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/entities/acceso_det.java" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/beans/loginBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/beans/tjrtyj.java" />
-        <option value="$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/beans/Tjrtyj.java" />
-        <option value="$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/beans/usuarioLogin.java" />
-        <option value="$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/beans/UsuarioLogin.java" />
-        <option value="$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/beans/UsuarioBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/entities/acceso_pk.java" />
         <option value="$PROJECT_DIR$/web/index.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/entities/programa.java" />
+        <option value="$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/beans/accesosBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/entities/modulo.java" />
         <option value="$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/entities/acceso.java" />
-        <option value="$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/test/usuarioTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/dao/usuarioDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/entities/reporteAceite.java" />
         <option value="$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/entities/usuario.java" />
-        <option value="$MAVEN_REPOSITORY$/org/primefaces/primefaces/5.2/primefaces-5.2.jar!/org/primefaces/context/RequestContext.class" />
-        <option value="$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/beans/usuarioBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/dao/moduloDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/dao/accesoDAO.java" />
+        <option value="$PROJECT_DIR$/web/home.xhtml" />
         <option value="$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/beans/menuBean.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/templates/plantilla.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/beans/usuarioBean.java" />
       </list>
     </option>
   </component>
@@ -216,15 +259,16 @@
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
-    <option name="FILTER_INFO" value="false" />
-    <option name="FILTER_DEBUG" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1066" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -240,55 +284,38 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="SisAquicultura" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SisAquicultura_0730" type="462c0819:PsiDirectoryNode" />
+              <item name="SisAquicultura_0822" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SisAquicultura" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SisAquicultura_0730" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SisAquicultura" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SisAquicultura_0730" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SisAquicultura" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SisAquicultura_0730" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="SisAquicultura_war" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SisAquicultura" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SisAquicultura_0730" type="462c0819:PsiDirectoryNode" />
+              <item name="SisAquicultura_0822" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SisAquicultura" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SisAquicultura_0730" type="462c0819:PsiDirectoryNode" />
+              <item name="SisAquicultura_0822" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SisAquicultura" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SisAquicultura_0730" type="462c0819:PsiDirectoryNode" />
+              <item name="SisAquicultura_0822" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SisAquicultura" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SisAquicultura_0730" type="462c0819:PsiDirectoryNode" />
+              <item name="SisAquicultura_0822" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -296,7 +323,7 @@
             </path>
             <path>
               <item name="SisAquicultura" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SisAquicultura_0730" type="462c0819:PsiDirectoryNode" />
+              <item name="SisAquicultura_0822" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -305,7 +332,27 @@
             </path>
             <path>
               <item name="SisAquicultura" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SisAquicultura_0730" type="462c0819:PsiDirectoryNode" />
+              <item name="SisAquicultura_0822" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="desarrollo" type="462c0819:PsiDirectoryNode" />
+              <item name="hibernate" type="462c0819:PsiDirectoryNode" />
+              <item name="beans" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SisAquicultura" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SisAquicultura_0822" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="desarrollo" type="462c0819:PsiDirectoryNode" />
+              <item name="hibernate" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SisAquicultura" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SisAquicultura_0822" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -315,40 +362,37 @@
             </path>
             <path>
               <item name="SisAquicultura" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SisAquicultura_0730" type="462c0819:PsiDirectoryNode" />
+              <item name="SisAquicultura_0822" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="desarrollo" type="462c0819:PsiDirectoryNode" />
+              <item name="hibernate" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SisAquicultura" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SisAquicultura_0730" type="462c0819:PsiDirectoryNode" />
+              <item name="SisAquicultura_0822" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="desarrollo" type="462c0819:PsiDirectoryNode" />
+              <item name="servicio" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SisAquicultura" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SisAquicultura_0730" type="462c0819:PsiDirectoryNode" />
+              <item name="SisAquicultura_0822" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SisAquicultura" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SisAquicultura_0730" type="462c0819:PsiDirectoryNode" />
+              <item name="SisAquicultura_0822" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SisAquicultura" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SisAquicultura_0730" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SisAquicultura" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SisAquicultura_0730" type="462c0819:PsiDirectoryNode" />
+              <item name="SisAquicultura_0822" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
@@ -357,31 +401,151 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="copyright.profiles" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/out/artifacts" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
-    <property name="js.eslint.eslintPackage" value="" />
-    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.26704016" />
-    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="project.structure.side.proportion" value="0.24099927" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../FHaro/Versionamiento/SisCongregacion_1011" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\HP\Documents\Programming\Java\Projects\SisAquiculturaTesis\Versionamiento\SisAquicultura_0730\web\WEB-INF" />
-      <recent name="C:\Users\HP\Documents\Programming\Java\Projects\SisAquiculturaTesis\Versionamiento\SisAquicultura_0730\web" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\HP\Documents\Programming\Java\Projects\SisAquiculturaTesis\Versionamiento\SisAquicultura_0730\src\main\java\es\desarrollo" />
-    </key>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/dataSources/864a8c12-aa90-4f87-a5d4-f26db8cfa9d3.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/SisAquicultura_war_exploded/META-INF/MANIFEST.MF</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/SisAquicultura_war_exploded/WEB-INF/classes/dataSources/864a8c12-aa90-4f87-a5d4-f26db8cfa9d3.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/SisAquicultura_war_exploded/WEB-INF/classes/es/desarrollo/hibernate/beans/usuarioBean.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/SisAquicultura_war_exploded/WEB-INF/classes/es/desarrollo/hibernate/dao/usuarioDAO.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/SisAquicultura_war_exploded/WEB-INF/classes/es/desarrollo/hibernate/entities/usuario.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/SisAquicultura_war_exploded/WEB-INF/classes/workspace.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/beans/menuBean.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/beans/usuarioBean.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/dao/accesoDAO.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/dao/moduloDAO.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/dao/usuarioDAO.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/entities/programa.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/entities/usuario.java</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/SisAquicultura_war_exploded/WEB-INF/classes/copyright/profiles_settings.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/SisAquicultura_war_exploded/WEB-INF/classes/dataSources.ids</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/SisAquicultura_war_exploded/WEB-INF/classes/es/desarrollo/hibernate/beans/accesosBean.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/SisAquicultura_war_exploded/WEB-INF/classes/es/desarrollo/hibernate/beans/menuBean.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/SisAquicultura_war_exploded/WEB-INF/classes/es/desarrollo/hibernate/dao/accesoDAO.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/SisAquicultura_war_exploded/WEB-INF/classes/es/desarrollo/hibernate/dao/moduloDAO.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/SisAquicultura_war_exploded/WEB-INF/classes/es/desarrollo/hibernate/entities/acceso.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/SisAquicultura_war_exploded/WEB-INF/classes/es/desarrollo/hibernate/entities/accesoDetalle.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/SisAquicultura_war_exploded/WEB-INF/classes/es/desarrollo/hibernate/entities/accesoPK.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/SisAquicultura_war_exploded/WEB-INF/classes/es/desarrollo/hibernate/entities/modulo.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/SisAquicultura_war_exploded/WEB-INF/classes/es/desarrollo/hibernate/entities/programa.class</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -397,8 +561,6 @@
   </component>
   <component name="RunManager" selected="GlassFish Server.SisAquicultura">
     <configuration name="SisAquicultura" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 4.1.1" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/SisAquicultura_war_exploded/" />
-      <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="SisAquicultura:war exploded">
@@ -469,6 +631,31 @@
         </option>
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -497,6 +684,7 @@
       <setting name="launchBrowser" value="true" />
       <setting name="launchBrowserUrl" value="" />
       <setting name="depsClasspath" value="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-interpreter>project</node-interpreter>
@@ -566,7 +754,7 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
@@ -576,20 +764,11 @@
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
       <option name="PREFERRED_AVD" value="" />
       <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
       <option name="FORCE_STOP_RUNNING_APP" value="true" />
-      <option name="DEBUGGER_TYPE" value="Java" />
       <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="" />
-      <Java />
-      <Profilers>
-        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
-        <option name="GAPID_ENABLED" value="false" />
-        <option name="GAPID_DISABLE_PCS" value="false" />
-        <option name="SUPPORT_LIB_ENABLED" value="true" />
-        <option name="INSTRUMENTATION_ENABLED" value="true" />
-      </Profilers>
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
       <method />
@@ -605,46 +784,11 @@
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
       <option name="PREFERRED_AVD" value="" />
       <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
       <option name="FORCE_STOP_RUNNING_APP" value="true" />
-      <option name="DEBUGGER_TYPE" value="Java" />
       <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="" />
-      <Java />
-      <Profilers>
-        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
-        <option name="GAPID_ENABLED" value="false" />
-        <option name="GAPID_DISABLE_PCS" value="false" />
-        <option name="SUPPORT_LIB_ENABLED" value="true" />
-        <option name="INSTRUMENTATION_ENABLED" value="true" />
-      </Profilers>
-      <method />
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
       <method />
     </configuration>
     <configuration default="true" type="ArquillianTestNG" factoryName="">
@@ -678,9 +822,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Cold Fusion runner description" factoryName="Cold Fusion" custom_browser="" web_path="">
       <method />
     </configuration>
     <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
@@ -781,6 +922,27 @@
       </ExternalSystemSettings>
       <method />
     </configuration>
+    <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
     <configuration default="true" type="JarApplication" factoryName="JAR Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <envs />
@@ -799,12 +961,6 @@
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
-      <config-file value="" />
-      <node-interpreter value="project" />
       <envs />
       <method />
     </configuration>
@@ -836,90 +992,51 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
-      <method />
-    </configuration>
-    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <setting name="path" value="" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="" />
-      <setting name="testKind" value="Class" />
-      <setting name="showProgressMessages" value="true" />
-      <classRegexps />
-      <testRegexps />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <setting name="path" value="" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="" />
-      <setting name="testKind" value="Class" />
-      <setting name="showProgressMessages" value="true" />
-      <classRegexps />
-      <testRegexps />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run" />
+      <command value="run-script" />
       <scripts />
       <node-interpreter value="project" />
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <working-directory />
-      <pass-parent-env>true</pass-parent-env>
-      <envs />
-      <ui />
-      <extra-mocha-options />
-      <test-kind>DIRECTORY</test-kind>
-      <test-directory />
-      <recursive>false</recursive>
       <method />
     </configuration>
     <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
       <method />
     </configuration>
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
-      <method />
-    </configuration>
-    <configuration default="true" type="uTestRunConfiguration" factoryName="utest">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <setting name="path" value="" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="" />
-      <setting name="testKind" value="Class" />
-      <setting name="showProgressMessages" value="true" />
-      <classRegexps />
-      <testRegexps />
-      <envs />
       <method />
     </configuration>
     <configuration name="usuarioTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -951,11 +1068,6 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SbtLocalSettings">
-    <option name="externalProjectsViewState">
-      <projects_view />
-    </option>
-  </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
@@ -964,135 +1076,91 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6276b5ab-4ad1-4b3a-ae2f-60ecdadef8b2" name="Default" comment="" />
-      <created>1501438850059</created>
+      <changelist id="f6410d87-c4e2-4ee2-a174-ab95fb49780e" name="Default" comment="" />
+      <created>1503457556181</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1501438850059</updated>
-      <workItem from="1501438852847" duration="1299000" />
-      <workItem from="1501794658104" duration="116000" />
-      <workItem from="1502040415965" duration="32000" />
-      <workItem from="1502832181658" duration="1731000" />
-      <workItem from="1502844016390" duration="841000" />
-      <workItem from="1503193810116" duration="673000" />
-      <workItem from="1503250879415" duration="105000" />
-      <workItem from="1503424652418" duration="10297000" />
-      <workItem from="1503502061913" duration="12055000" />
-      <workItem from="1503683584979" duration="1324000" />
-      <workItem from="1504549253142" duration="818000" />
-      <workItem from="1507076678747" duration="3767000" />
-      <workItem from="1507731756963" duration="3305000" />
-      <workItem from="1507840959541" duration="2064000" />
-      <workItem from="1507843160124" duration="877000" />
+      <updated>1503457556181</updated>
+      <workItem from="1503457558909" duration="4116000" />
+      <workItem from="1503761245714" duration="13000" />
+      <workItem from="1507755472245" duration="1242000" />
+      <workItem from="1507772749294" duration="8562000" />
+      <workItem from="1507858605069" duration="95000" />
+      <workItem from="1507858730590" duration="651000" />
     </task>
-    <task id="LOCAL-00001" summary="Commit #4 - Java EE y Clase Utils.">
-      <created>1502844849581</created>
+    <task id="LOCAL-00001" summary="Commit #7&#10;- Entitades para el control del acceso del usuario&#10;- Mejoras en la interface&#10;- Login validado">
+      <created>1507783194491</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1502844849581</updated>
+      <updated>1507783194491</updated>
     </task>
-    <task id="LOCAL-00002" summary="Commit #5 - Se modifica la estructura del proyecto. La percistencia es creada y apunta a la base de datos dbAquicultura, donde se genera la tabla para los usuarios desde hibernate. Se crea la entidad de &quot;usuario&quot; y se generan las clases del bean, dao y test. Tambien se agregan dependencias y librearias necesarias para reportes en excel y pdf.">
-      <created>1503441997136</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1503441997136</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Commit #5 - Se modifica la estructura del proyecto. La percistencia es creada y apunta a la base de datos dbAquicultura, donde se genera la tabla para los usuarios desde hibernate. Se crea la entidad de &quot;usuario&quot; y se generan las clases del bean, dao y test. Tambien se agregan dependencias y librearias necesarias para reportes en excel y pdf.">
-      <created>1503444047929</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1503444047929</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Commit #6 - Se valida el login de la página principal, y se genera la tabla de accesos para el sistema.">
-      <created>1503529018782</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1503529018782</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39304000" />
+    <option name="totallyTimeSpent" value="14679000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37639877" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291714" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27672955" sideWeight="0.50625" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26279318" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17430703" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13072917" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48118007" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20040692" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25558794" sideWeight="0.49375" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22934888" sideWeight="0.4936034" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15458423" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15208334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.7536688" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960325" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
     </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Commit #4 - Java EE y Clase Utils." />
-    <MESSAGE value="Commit #5 - Se modifica la estructura del proyecto. La percistencia es creada y apunta a la base de datos dbAquicultura, donde se genera la tabla para los usuarios desde hibernate. Se crea la entidad de &quot;usuario&quot; y se generan las clases del bean, dao y test. Tambien se agregan dependencias y librearias necesarias para reportes en excel y pdf." />
-    <MESSAGE value="Commit #6 - Se valida el login de la página principal, y se genera la tabla de accesos para el sistema." />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit #6 - Se valida el login de la página principal, y se genera la tabla de accesos para el sistema." />
+    <MESSAGE value="Commit #7&#10;- Entitades para el control del acceso del usuario&#10;- Mejoras en la interface&#10;- Login validado" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit #7&#10;- Entitades para el control del acceso del usuario&#10;- Mejoras en la interface&#10;- Login validado" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1100,564 +1168,95 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/index.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="29" column="41" lean-forward="false" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/dao/usuarioDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="26" column="43" lean-forward="false" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/entities/usuario.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#1581#1582#0" expanded="true" />
-            <element signature="e#1606#1607#0" expanded="true" />
-            <element signature="e#1642#1643#0" expanded="true" />
-            <element signature="e#1670#1671#0" expanded="true" />
-            <element signature="e#1702#1703#0" expanded="true" />
-            <element signature="e#1730#1731#0" expanded="true" />
-            <element signature="e#1772#1773#0" expanded="true" />
-            <element signature="e#1806#1807#0" expanded="true" />
-            <element signature="e#1839#1840#0" expanded="true" />
-            <element signature="e#1868#1869#0" expanded="true" />
-            <element signature="e#1912#1913#0" expanded="true" />
-            <element signature="e#1948#1949#0" expanded="true" />
-            <element signature="e#1990#1991#0" expanded="true" />
-            <element signature="e#2028#2029#0" expanded="true" />
-            <element signature="e#2090#2091#0" expanded="true" />
-            <element signature="e#2144#2145#0" expanded="true" />
-            <element signature="e#2182#2183#0" expanded="true" />
-            <element signature="e#2218#2219#0" expanded="true" />
-            <element signature="e#2274#2275#0" expanded="true" />
-            <element signature="e#2324#2325#0" expanded="true" />
-            <element signature="e#2366#2367#0" expanded="true" />
-            <element signature="e#2404#2405#0" expanded="true" />
-            <element signature="e#2466#2467#0" expanded="true" />
-            <element signature="e#2520#2521#0" expanded="true" />
-            <element signature="e#2562#2563#0" expanded="true" />
-            <element signature="e#2602#2603#0" expanded="true" />
-            <element signature="e#2666#2667#0" expanded="true" />
-            <element signature="e#2724#2725#0" expanded="true" />
-            <element signature="e#2790#2791#0" expanded="true" />
-            <element signature="e#2819#2820#0" expanded="true" />
-            <element signature="e#2896#2897#0" expanded="true" />
-            <element signature="e#2932#2933#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/entities/acceso.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="527">
+          <caret line="33" column="86" lean-forward="false" selection-start-line="33" selection-start-column="86" selection-end-line="33" selection-end-column="86" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/test/usuarioTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/entities/modulo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="29" column="41" lean-forward="false" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/beans/usuarioBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="28" column="40" lean-forward="false" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+        <state relative-caret-position="442">
+          <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/dao/usuarioDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="26" column="43" lean-forward="false" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/entities/usuario.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="8" column="3" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-          <folding>
-            <element signature="e#1581#1582#0" expanded="true" />
-            <element signature="e#1606#1607#0" expanded="true" />
-            <element signature="e#1642#1643#0" expanded="true" />
-            <element signature="e#1670#1671#0" expanded="true" />
-            <element signature="e#1702#1703#0" expanded="true" />
-            <element signature="e#1730#1731#0" expanded="true" />
-            <element signature="e#1772#1773#0" expanded="true" />
-            <element signature="e#1806#1807#0" expanded="true" />
-            <element signature="e#1839#1840#0" expanded="true" />
-            <element signature="e#1868#1869#0" expanded="true" />
-            <element signature="e#1912#1913#0" expanded="true" />
-            <element signature="e#1948#1949#0" expanded="true" />
-            <element signature="e#1990#1991#0" expanded="true" />
-            <element signature="e#2028#2029#0" expanded="true" />
-            <element signature="e#2090#2091#0" expanded="true" />
-            <element signature="e#2144#2145#0" expanded="true" />
-            <element signature="e#2182#2183#0" expanded="true" />
-            <element signature="e#2218#2219#0" expanded="true" />
-            <element signature="e#2274#2275#0" expanded="true" />
-            <element signature="e#2324#2325#0" expanded="true" />
-            <element signature="e#2366#2367#0" expanded="true" />
-            <element signature="e#2404#2405#0" expanded="true" />
-            <element signature="e#2466#2467#0" expanded="true" />
-            <element signature="e#2520#2521#0" expanded="true" />
-            <element signature="e#2562#2563#0" expanded="true" />
-            <element signature="e#2602#2603#0" expanded="true" />
-            <element signature="e#2666#2667#0" expanded="true" />
-            <element signature="e#2724#2725#0" expanded="true" />
-            <element signature="e#2790#2791#0" expanded="true" />
-            <element signature="e#2819#2820#0" expanded="true" />
-            <element signature="e#2896#2897#0" expanded="true" />
-            <element signature="e#2932#2933#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/entities/acceso.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/test/usuarioTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="29" column="41" lean-forward="false" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/beans/usuarioBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="28" column="40" lean-forward="false" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/dao/usuarioDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="26" column="43" lean-forward="false" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/entities/usuario.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="8" column="3" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-          <folding>
-            <element signature="e#1581#1582#0" expanded="true" />
-            <element signature="e#1606#1607#0" expanded="true" />
-            <element signature="e#1642#1643#0" expanded="true" />
-            <element signature="e#1670#1671#0" expanded="true" />
-            <element signature="e#1702#1703#0" expanded="true" />
-            <element signature="e#1730#1731#0" expanded="true" />
-            <element signature="e#1772#1773#0" expanded="true" />
-            <element signature="e#1806#1807#0" expanded="true" />
-            <element signature="e#1839#1840#0" expanded="true" />
-            <element signature="e#1868#1869#0" expanded="true" />
-            <element signature="e#1912#1913#0" expanded="true" />
-            <element signature="e#1948#1949#0" expanded="true" />
-            <element signature="e#1990#1991#0" expanded="true" />
-            <element signature="e#2028#2029#0" expanded="true" />
-            <element signature="e#2090#2091#0" expanded="true" />
-            <element signature="e#2144#2145#0" expanded="true" />
-            <element signature="e#2182#2183#0" expanded="true" />
-            <element signature="e#2218#2219#0" expanded="true" />
-            <element signature="e#2274#2275#0" expanded="true" />
-            <element signature="e#2324#2325#0" expanded="true" />
-            <element signature="e#2366#2367#0" expanded="true" />
-            <element signature="e#2404#2405#0" expanded="true" />
-            <element signature="e#2466#2467#0" expanded="true" />
-            <element signature="e#2520#2521#0" expanded="true" />
-            <element signature="e#2562#2563#0" expanded="true" />
-            <element signature="e#2602#2603#0" expanded="true" />
-            <element signature="e#2666#2667#0" expanded="true" />
-            <element signature="e#2724#2725#0" expanded="true" />
-            <element signature="e#2790#2791#0" expanded="true" />
-            <element signature="e#2819#2820#0" expanded="true" />
-            <element signature="e#2896#2897#0" expanded="true" />
-            <element signature="e#2932#2933#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/entities/acceso.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/test/usuarioTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="29" column="41" lean-forward="false" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/dao/usuarioDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="34" column="15" lean-forward="false" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/beans/usuarioBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#859#860#0" expanded="true" />
+            <element signature="e#884#885#0" expanded="true" />
+            <element signature="e#920#921#0" expanded="true" />
+            <element signature="e#948#949#0" expanded="true" />
+            <element signature="e#981#982#0" expanded="true" />
+            <element signature="e#1010#1011#0" expanded="true" />
+            <element signature="e#1054#1055#0" expanded="true" />
+            <element signature="e#1090#1091#0" expanded="true" />
+            <element signature="e#1121#1122#0" expanded="true" />
+            <element signature="e#1148#1149#0" expanded="true" />
+            <element signature="e#1188#1189#0" expanded="true" />
+            <element signature="e#1220#1221#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/entities/usuario.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="8" column="3" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        <state relative-caret-position="1530">
+          <caret line="119" column="62" lean-forward="false" selection-start-line="119" selection-start-column="62" selection-end-line="119" selection-end-column="62" />
           <folding>
-            <element signature="e#1581#1582#0" expanded="true" />
-            <element signature="e#1606#1607#0" expanded="true" />
-            <element signature="e#1642#1643#0" expanded="true" />
-            <element signature="e#1670#1671#0" expanded="true" />
-            <element signature="e#1702#1703#0" expanded="true" />
-            <element signature="e#1730#1731#0" expanded="true" />
-            <element signature="e#1772#1773#0" expanded="true" />
-            <element signature="e#1806#1807#0" expanded="true" />
-            <element signature="e#1839#1840#0" expanded="true" />
-            <element signature="e#1868#1869#0" expanded="true" />
-            <element signature="e#1912#1913#0" expanded="true" />
-            <element signature="e#1948#1949#0" expanded="true" />
-            <element signature="e#1990#1991#0" expanded="true" />
-            <element signature="e#2028#2029#0" expanded="true" />
-            <element signature="e#2090#2091#0" expanded="true" />
-            <element signature="e#2144#2145#0" expanded="true" />
-            <element signature="e#2182#2183#0" expanded="true" />
-            <element signature="e#2218#2219#0" expanded="true" />
-            <element signature="e#2274#2275#0" expanded="true" />
-            <element signature="e#2324#2325#0" expanded="true" />
-            <element signature="e#2366#2367#0" expanded="true" />
-            <element signature="e#2404#2405#0" expanded="true" />
-            <element signature="e#2466#2467#0" expanded="true" />
-            <element signature="e#2520#2521#0" expanded="true" />
-            <element signature="e#2562#2563#0" expanded="true" />
-            <element signature="e#2602#2603#0" expanded="true" />
-            <element signature="e#2666#2667#0" expanded="true" />
-            <element signature="e#2724#2725#0" expanded="true" />
-            <element signature="e#2790#2791#0" expanded="true" />
-            <element signature="e#2819#2820#0" expanded="true" />
-            <element signature="e#2896#2897#0" expanded="true" />
-            <element signature="e#2932#2933#0" expanded="true" />
+            <marker date="1507858961054" expanded="true" signature="762:763" ph="@{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/entities/acceso.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/dao/accesoDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="493">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1507858961051" expanded="true" signature="960:970" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/test/usuarioTest.java">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/templates/plantilla.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="408">
+          <caret line="24" column="67" lean-forward="false" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/index.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="29" column="41" lean-forward="false" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
+        <state relative-caret-position="136">
+          <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/beans/usuarioBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/dao/usuarioDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="34" column="15" lean-forward="false" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="50" lean-forward="false" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/entities/usuario.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#1581#1582#0" expanded="true" />
-            <element signature="e#1606#1607#0" expanded="true" />
-            <element signature="e#1642#1643#0" expanded="true" />
-            <element signature="e#1670#1671#0" expanded="true" />
-            <element signature="e#1702#1703#0" expanded="true" />
-            <element signature="e#1730#1731#0" expanded="true" />
-            <element signature="e#1772#1773#0" expanded="true" />
-            <element signature="e#1806#1807#0" expanded="true" />
-            <element signature="e#1839#1840#0" expanded="true" />
-            <element signature="e#1868#1869#0" expanded="true" />
-            <element signature="e#1912#1913#0" expanded="true" />
-            <element signature="e#1948#1949#0" expanded="true" />
-            <element signature="e#1990#1991#0" expanded="true" />
-            <element signature="e#2028#2029#0" expanded="true" />
-            <element signature="e#2090#2091#0" expanded="true" />
-            <element signature="e#2144#2145#0" expanded="true" />
-            <element signature="e#2182#2183#0" expanded="true" />
-            <element signature="e#2218#2219#0" expanded="true" />
-            <element signature="e#2274#2275#0" expanded="true" />
-            <element signature="e#2324#2325#0" expanded="true" />
-            <element signature="e#2366#2367#0" expanded="true" />
-            <element signature="e#2404#2405#0" expanded="true" />
-            <element signature="e#2466#2467#0" expanded="true" />
-            <element signature="e#2520#2521#0" expanded="true" />
-            <element signature="e#2562#2563#0" expanded="true" />
-            <element signature="e#2602#2603#0" expanded="true" />
-            <element signature="e#2666#2667#0" expanded="true" />
-            <element signature="e#2724#2725#0" expanded="true" />
-            <element signature="e#2790#2791#0" expanded="true" />
-            <element signature="e#2819#2820#0" expanded="true" />
-            <element signature="e#2896#2897#0" expanded="true" />
-            <element signature="e#2932#2933#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/servicio/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/servicio/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/servicio/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SisAquicultura.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="101" column="20" lean-forward="true" selection-start-line="101" selection-start-column="20" selection-end-line="101" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/864a8c12-aa90-4f87-a5d4-f26db8cfa9d3/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/dd3b12aa/864a8c12-aa90-4f87-a5d4-f26db8cfa9d3/dbaquicultura.usuario" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/servicio/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/home.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/artifacts/SisAquicultura_war_exploded.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="50" lean-forward="false" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
+        <state relative-caret-position="187">
+          <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/dd3b12aa/864a8c12-aa90-4f87-a5d4-f26db8cfa9d3/dbaquicultura.sis_usuarios" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_40/jre/lib/rt.jar!/java/lang/reflect/Field.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/beans/accesosBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="101" column="20" lean-forward="false" selection-start-line="101" selection-start-column="20" selection-end-line="101" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/dao/usuarioDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="26" column="43" lean-forward="false" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/entities/reporteAceite.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/entities/usuario.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="23" column="35" lean-forward="false" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+        <state relative-caret-position="272">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
-            <element signature="e#1581#1582#0" expanded="true" />
-            <element signature="e#1606#1607#0" expanded="true" />
-            <element signature="e#1642#1643#0" expanded="true" />
-            <element signature="e#1670#1671#0" expanded="true" />
-            <element signature="e#1702#1703#0" expanded="true" />
-            <element signature="e#1730#1731#0" expanded="true" />
-            <element signature="e#1772#1773#0" expanded="true" />
-            <element signature="e#1806#1807#0" expanded="true" />
-            <element signature="e#1839#1840#0" expanded="true" />
-            <element signature="e#1868#1869#0" expanded="true" />
-            <element signature="e#1912#1913#0" expanded="true" />
-            <element signature="e#1948#1949#0" expanded="true" />
-            <element signature="e#1990#1991#0" expanded="true" />
-            <element signature="e#2028#2029#0" expanded="true" />
-            <element signature="e#2090#2091#0" expanded="true" />
-            <element signature="e#2144#2145#0" expanded="true" />
-            <element signature="e#2182#2183#0" expanded="true" />
-            <element signature="e#2218#2219#0" expanded="true" />
-            <element signature="e#2274#2275#0" expanded="true" />
-            <element signature="e#2324#2325#0" expanded="true" />
-            <element signature="e#2366#2367#0" expanded="true" />
-            <element signature="e#2404#2405#0" expanded="true" />
-            <element signature="e#2466#2467#0" expanded="true" />
-            <element signature="e#2520#2521#0" expanded="true" />
-            <element signature="e#2562#2563#0" expanded="true" />
-            <element signature="e#2602#2603#0" expanded="true" />
-            <element signature="e#2666#2667#0" expanded="true" />
-            <element signature="e#2724#2725#0" expanded="true" />
-            <element signature="e#2790#2791#0" expanded="true" />
-            <element signature="e#2819#2820#0" expanded="true" />
-            <element signature="e#2896#2897#0" expanded="true" />
-            <element signature="e#2932#2933#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/test/usuarioTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/dao/moduloDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="36" column="41" lean-forward="false" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/entities/acceso.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/primefaces/primefaces/5.2/primefaces-5.2.jar!/org/primefaces/context/RequestContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="56" column="25" lean-forward="false" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/beans/usuarioBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="695">
-          <caret line="45" column="50" lean-forward="false" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
+        <state relative-caret-position="357">
+          <caret line="28" column="9" lean-forward="false" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1666,57 +1265,447 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/beans/menuBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="652">
-          <caret line="68" column="64" lean-forward="false" selection-start-line="68" selection-start-column="64" selection-end-line="68" selection-end-column="64" />
+        <state relative-caret-position="238">
+          <caret line="23" column="74" lean-forward="false" selection-start-line="23" selection-start-column="74" selection-end-line="23" selection-end-column="74" />
           <folding>
-            <element signature="method#addMessage#0;class#menuBean#0" expanded="false" />
+            <element signature="e#3787#3788#0" expanded="true" />
+            <element signature="e#3815#3816#0" expanded="true" />
+            <element signature="e#3883#3884#0" expanded="true" />
+            <element signature="e#3913#3914#0" expanded="true" />
+            <element signature="e#3949#3950#0" expanded="true" />
+            <element signature="e#3981#3982#0" expanded="true" />
+            <element signature="e#4007#4008#0" expanded="true" />
+            <element signature="e#4058#4059#0" expanded="true" />
+            <element signature="e#4086#4087#0" expanded="true" />
+            <element signature="e#4139#4140#0" expanded="true" />
+            <element signature="e#4167#4168#0" expanded="true" />
+            <element signature="e#4220#4221#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/beans/usuarioBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/entities/acceso.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="33" column="86" lean-forward="false" selection-start-line="33" selection-start-column="86" selection-end-line="33" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/entities/modulo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#859#860#0" expanded="true" />
+            <element signature="e#884#885#0" expanded="true" />
+            <element signature="e#920#921#0" expanded="true" />
+            <element signature="e#948#949#0" expanded="true" />
+            <element signature="e#981#982#0" expanded="true" />
+            <element signature="e#1010#1011#0" expanded="true" />
+            <element signature="e#1054#1055#0" expanded="true" />
+            <element signature="e#1090#1091#0" expanded="true" />
+            <element signature="e#1121#1122#0" expanded="true" />
+            <element signature="e#1148#1149#0" expanded="true" />
+            <element signature="e#1188#1189#0" expanded="true" />
+            <element signature="e#1220#1221#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/dao/accesoDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1507858961051" expanded="true" signature="960:970" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/entities/usuario.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1530">
+          <caret line="119" column="62" lean-forward="false" selection-start-line="119" selection-start-column="62" selection-end-line="119" selection-end-column="62" />
+          <folding>
+            <marker date="1507858961054" expanded="true" signature="762:763" ph="@{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/templates/plantilla.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="25" column="71" lean-forward="false" selection-start-line="25" selection-start-column="71" selection-end-line="25" selection-end-column="71" />
+        <state relative-caret-position="408">
+          <caret line="24" column="67" lean-forward="false" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/home.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/beans/accesosBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/dao/moduloDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="28" column="9" lean-forward="false" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/beans/menuBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="36" column="43" lean-forward="false" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
+          <folding>
+            <element signature="e#3787#3788#0" expanded="true" />
+            <element signature="e#3815#3816#0" expanded="true" />
+            <element signature="e#3883#3884#0" expanded="true" />
+            <element signature="e#3913#3914#0" expanded="true" />
+            <element signature="e#3949#3950#0" expanded="true" />
+            <element signature="e#3981#3982#0" expanded="true" />
+            <element signature="e#4007#4008#0" expanded="true" />
+            <element signature="e#4058#4059#0" expanded="true" />
+            <element signature="e#4086#4087#0" expanded="true" />
+            <element signature="e#4139#4140#0" expanded="true" />
+            <element signature="e#4167#4168#0" expanded="true" />
+            <element signature="e#4220#4221#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/beans/usuarioBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/dao/usuarioDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="28" column="23" lean-forward="false" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="14" lean-forward="false" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/dao/usuarioDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/3f2a584c/864a8c12-aa90-4f87-a5d4-f26db8cfa9d3/dbaquicultura.sis_accesos">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/3f2a584c/864a8c12-aa90-4f87-a5d4-f26db8cfa9d3/dbaquicultura.sis_usuarios">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/entities/accesoPK.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="36" lean-forward="true" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/entities/programa.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1675#1676#0" expanded="true" />
+            <element signature="e#1700#1701#0" expanded="true" />
+            <element signature="e#1736#1737#0" expanded="true" />
+            <element signature="e#1764#1765#0" expanded="true" />
+            <element signature="e#1797#1798#0" expanded="true" />
+            <element signature="e#1826#1827#0" expanded="true" />
+            <element signature="e#1870#1871#0" expanded="true" />
+            <element signature="e#1906#1907#0" expanded="true" />
+            <element signature="e#1939#1940#0" expanded="true" />
+            <element signature="e#1968#1969#0" expanded="true" />
+            <element signature="e#2012#2013#0" expanded="true" />
+            <element signature="e#2048#2049#0" expanded="true" />
+            <element signature="e#2090#2091#0" expanded="true" />
+            <element signature="e#2128#2129#0" expanded="true" />
+            <element signature="e#2190#2191#0" expanded="true" />
+            <element signature="e#2244#2245#0" expanded="true" />
+            <element signature="e#2282#2283#0" expanded="true" />
+            <element signature="e#2318#2319#0" expanded="true" />
+            <element signature="e#2374#2375#0" expanded="true" />
+            <element signature="e#2424#2425#0" expanded="true" />
+            <element signature="e#2470#2471#0" expanded="true" />
+            <element signature="e#2512#2513#0" expanded="true" />
+            <element signature="e#2582#2583#0" expanded="true" />
+            <element signature="e#2644#2645#0" expanded="true" />
+            <element signature="e#2686#2687#0" expanded="true" />
+            <element signature="e#2726#2727#0" expanded="true" />
+            <element signature="e#2790#2791#0" expanded="true" />
+            <element signature="e#2848#2849#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/entities/accesoDetalle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="30" lean-forward="true" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1207#1208#0" expanded="true" />
+            <element signature="e#1240#1241#0" expanded="true" />
+            <element signature="e#1292#1293#0" expanded="true" />
+            <element signature="e#1336#1337#0" expanded="true" />
+            <element signature="e#1373#1374#0" expanded="true" />
+            <element signature="e#1406#1407#0" expanded="true" />
+            <element signature="e#1458#1459#0" expanded="true" />
+            <element signature="e#1502#1503#0" expanded="true" />
+            <element signature="e#1538#1539#0" expanded="true" />
+            <element signature="e#1569#1570#0" expanded="true" />
+            <element signature="e#1618#1619#0" expanded="true" />
+            <element signature="e#1658#1659#0" expanded="true" />
+            <element signature="e#1691#1692#0" expanded="true" />
+            <element signature="e#1719#1720#0" expanded="true" />
+            <element signature="e#1762#1763#0" expanded="true" />
+            <element signature="e#1796#1797#0" expanded="true" />
+            <element signature="e#1833#1834#0" expanded="true" />
+            <element signature="e#1865#1866#0" expanded="true" />
+            <element signature="e#1916#1917#0" expanded="true" />
+            <element signature="e#1958#1959#0" expanded="true" />
+            <element signature="e#1992#1993#0" expanded="true" />
+            <element signature="e#2021#2022#0" expanded="true" />
+            <element signature="e#2066#2067#0" expanded="true" />
+            <element signature="e#2102#2103#0" expanded="true" />
+            <element signature="e#2138#2139#0" expanded="true" />
+            <element signature="e#2169#2170#0" expanded="true" />
+            <element signature="e#2218#2219#0" expanded="true" />
+            <element signature="e#2258#2259#0" expanded="true" />
+            <element signature="e#2324#2325#0" expanded="true" />
+            <element signature="e#2353#2354#0" expanded="true" />
+            <element signature="e#2430#2431#0" expanded="true" />
+            <element signature="e#2466#2467#0" expanded="true" />
+            <element signature="e#2536#2537#0" expanded="true" />
+            <element signature="e#2567#2568#0" expanded="true" />
+            <element signature="e#2650#2651#0" expanded="true" />
+            <element signature="e#2690#2691#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/entities/acceso.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="33" column="86" lean-forward="false" selection-start-line="33" selection-start-column="86" selection-end-line="33" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/entities/usuario.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2057">
+          <caret line="122" column="62" lean-forward="false" selection-start-line="122" selection-start-column="62" selection-end-line="122" selection-end-column="62" />
+          <folding>
+            <marker date="1507858961054" expanded="true" signature="762:763" ph="@{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/entities/modulo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#859#860#0" expanded="true" />
+            <element signature="e#884#885#0" expanded="true" />
+            <element signature="e#920#921#0" expanded="true" />
+            <element signature="e#948#949#0" expanded="true" />
+            <element signature="e#981#982#0" expanded="true" />
+            <element signature="e#1010#1011#0" expanded="true" />
+            <element signature="e#1054#1055#0" expanded="true" />
+            <element signature="e#1090#1091#0" expanded="true" />
+            <element signature="e#1121#1122#0" expanded="true" />
+            <element signature="e#1148#1149#0" expanded="true" />
+            <element signature="e#1188#1189#0" expanded="true" />
+            <element signature="e#1220#1221#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/dao/accesoDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1507858961051" expanded="true" signature="960:970" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/home.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/templates/plantilla.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="67" lean-forward="false" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/dao/moduloDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="28" column="9" lean-forward="false" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/beans/accesosBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/beans/menuBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="17" column="35" lean-forward="false" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+          <folding>
+            <element signature="e#3787#3788#0" expanded="true" />
+            <element signature="e#3815#3816#0" expanded="true" />
+            <element signature="e#3883#3884#0" expanded="true" />
+            <element signature="e#3913#3914#0" expanded="true" />
+            <element signature="e#3949#3950#0" expanded="true" />
+            <element signature="e#3981#3982#0" expanded="true" />
+            <element signature="e#4007#4008#0" expanded="true" />
+            <element signature="e#4058#4059#0" expanded="true" />
+            <element signature="e#4086#4087#0" expanded="true" />
+            <element signature="e#4139#4140#0" expanded="true" />
+            <element signature="e#4167#4168#0" expanded="true" />
+            <element signature="e#4220#4221#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/beans/usuarioBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="25" lean-forward="false" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
-      <state key="ArquillianSettingsConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>SisAquicultura:war</last-edited>
+          <last-edited>SisAquicultura:war exploded</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.26704016" />
+                <option value="0.24099927" />
                 <option value="0.5" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="Copyright.UI">
-        <settings>
-          <last-edited>Rostan</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>
@@ -1724,11 +1713,11 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Web (SisAquicultura)|Web</last-edited>
+          <last-edited>JPA</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.26704016" />
+                <option value="0.24099927" />
               </list>
             </option>
           </splitter-proportions>
@@ -1739,7 +1728,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.26704016" />
+                <option value="0.24099927" />
               </list>
             </option>
           </splitter-proportions>
@@ -1747,11 +1736,11 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.6</last-edited>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.26704016" />
+                <option value="0.24099927" />
               </list>
             </option>
           </splitter-proportions>
@@ -1763,20 +1752,8 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.26704016" />
+                <option value="0.24099927" />
                 <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.6</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>
@@ -1788,18 +1765,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.26704016" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
+                <option value="0.24099927" />
               </list>
             </option>
           </splitter-proportions>

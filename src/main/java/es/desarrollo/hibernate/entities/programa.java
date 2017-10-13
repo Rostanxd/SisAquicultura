@@ -30,6 +30,9 @@ public class programa {
     @Column(name = "prg_fec_modificacion", length = 10)
     private Date fechaModificacion;
 
+    @Column(name = "prg_page", length = 80)
+    private String pagina;
+
 //    RELACIONES
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "mod_codigo", updatable = false, insertable = false,
@@ -116,5 +119,13 @@ public class programa {
 
     public es.desarrollo.hibernate.entities.modulo getModulo() {
         return modulo;
+    }
+
+    public String getPagina() {
+        return pagina;
+    }
+
+    public void setPagina(String pagina) {
+        this.pagina = pagina;
     }
 }

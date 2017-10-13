@@ -21,8 +21,9 @@ public class accesoDAO {
      */
     public List<accesoDetalle> accesosUsuario(usuario usuario){
         EntityManager em = emf.createEntityManager();
-        Query qry = em.createQuery("SELECT a FROM accesoDetalle AS a WHERE a.acc_codigo = :acc_codigo");
-        qry.setParameter("acc_codigo", usuario.getAcceso());
+        Query qry = em.createQuery("SELECT a " +
+                "FROM accesoDetalle AS a WHERE a.acc_codigo = :acc_codigo");
+        qry.setParameter("acc_codigo", usuario.getAcceso().getId());
         return (List<accesoDetalle>) qry.getResultList();
     }
 

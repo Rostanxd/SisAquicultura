@@ -18,7 +18,7 @@ public class moduloDAO {
      * @param tipoUsuario {'S', 'U'} resuelve para saber que tipo de usuario loguea.
      * @return retorna la lista de modulos que se podran cargar.
      */
-    public List<modulo> listarModulosSistema(String tipoUsuario){
+    public List<modulo> listarModulosTipoUsuario(String tipoUsuario){
         EntityManager em = emf.createEntityManager();
         Query qry;
 
@@ -27,6 +27,12 @@ public class moduloDAO {
         }else{
             qry = em.createQuery("SELECT m FROM modulo as m WHERE m.tipo = 'U'");
         }
+        return (List<modulo>) qry.getResultList();
+    }
+
+    public List<modulo> listarModulosSistema(){
+        EntityManager em = emf.createEntityManager();
+        Query qry = em.createQuery("SELECT m FROM modulo AS m");
         return (List<modulo>) qry.getResultList();
     }
 }

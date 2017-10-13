@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+    <title>Sistema de Aquicultura 1.0</title>
+</h:head>
+<h:body>
+    <ui:composition template="./WEB-INF/templates/plantilla.xhtml">
+        <ui:define name="content">
+            <h:form id="form">
+                <p:dataTable id="dataModulos" var="modulo" value="#{moduloBean.modulos}"
+                             selectionMode="single" selection="#{moduloBean.modulo}" rowKey="#{modulo.id}"
+                             style="font-size: smaller; width: auto;" emptyMessage="No hay datos." scrollable="true" scrollHeight="500px">
+                    <f:facet name="header"  >
+                        Modelos
+                    </f:facet>
+                    <p:column headerText="Id" filterBy="#{modulo.id}" filterMatchMode="contains" style="width: 150px">
+                        <p:outputLabel value="#{modulo.id}"/>
+                    </p:column>
+                    <p:column headerText="Apellidos" filterBy="#{modulo.nombre}" filterMatchMode="contains" style="width: 150px">
+                        <p:outputLabel value="#{modulo.nombre}"/>
+                    </p:column>
+                    <f:facet name="footer">
+                        <p:commandButton value="Ingresar" id="ingresar" icon="ui-icon-disk" oncomplete="PF('wdgModulo').show();" update=":dlgModulo"/>
+                        <p:commandButton value="Modificar" id="modificar" icon="ui-icon-disk" oncomplete="PF('wdgModulo').show();" update=":dlgModulo" />
+                    </f:facet>
+                </p:dataTable>
+            </h:form>
+
+            <!--Dialog-->
+            <p:dialog id="dlgModulo" header="Modulo" widgetVar="wdgModulo" modal="true" width="770" style="font-size: smaller">
+                <h:form>
+                    <p:panelGrid>
+                        <p:row>
+                            <p:column>
+                                <p:outputLabel value="Código" style="font-weight: bold; color: darkred" />
+                            </p:column>
+                            <p:column>
+                                <p:inputText value="#{moduloBean.moduloSelected.id}"/>
+                            </p:column>
+                        </p:row>
+                        <p:row>
+                            <p:column>
+                                <p:outputLabel value="Nombre" style="font-weight: bold" />
+                            </p:column>
+                            <p:column>
+                                <p:inputText value="#{moduloBean.moduloSelected.nombre}"/>
+                            </p:column>
+                        </p:row>
+                    </p:panelGrid>
+                    <!--Botones-->
+                    <p:commandButton value="" oncomplete="PF('wdgModulo').hide()" update=":form"/>
+                    <p:commandButton value="Cancel" oncomplete="PF('wdgModulo').hide()" immediate="true"/>
+                </h:form>
+            </p:dialog>
+        </ui:define>
+    </ui:composition>
+</h:body>
+</html>
