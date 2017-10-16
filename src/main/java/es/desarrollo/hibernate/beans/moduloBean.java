@@ -17,17 +17,50 @@ public class moduloBean {
 
     private modulo moduloSelected = new modulo();
 
-    private List<modulo> modulos = new ArrayList<>();
+    private List<modulo> listModulos = new ArrayList<>();
 
     private String btnAccion = "";
 
     @PostConstruct
     public void init(){
-        moduloDAO moduloDAO = new moduloDAO();
-        this.modulos = moduloDAO.listarModulosSistema();
+        this.listarModulos();
     }
 
-//    GETTER Y SETTER
+    public void operar(){
+        switch (btnAccion){
+            case "Ingresar":
+                this.ingresarModulo();
+                this.limpiar();
+                break;
+            case "Actualizar":
+                this.actualizarModulo();
+                this.limpiar();
+                break;
+        }
+    }
+
+    private void actualizarModulo() {
+        moduloDAO moduloDAO = new moduloDAO();
+        moduloDAO.actualizar(moduloSelected);
+
+        this.listModulos.clear();
+        this.listarModulos();
+    }
+
+    private void ingresarModulo() {
+        moduloDAO moduloDAO = new moduloDAO();
+        moduloDAO.registrar(moduloSelected);
+
+        this.listModulos.clear();
+        this.listarModulos();
+    }
+
+    private void listarModulos(){
+        moduloDAO moduloDAO = new moduloDAO();
+        this.listModulos = moduloDAO.listar();
+    }
+
+    //    GETTER Y SETTER
     public es.desarrollo.hibernate.entities.modulo getModulo() {
         return modulo;
     }
@@ -44,12 +77,12 @@ public class moduloBean {
         this.moduloSelected = moduloSelected;
     }
 
-    public List<es.desarrollo.hibernate.entities.modulo> getModulos() {
-        return modulos;
+    public List<es.desarrollo.hibernate.entities.modulo> getListModulos() {
+        return listModulos;
     }
 
-    public void setModulos(List<es.desarrollo.hibernate.entities.modulo> modulos) {
-        this.modulos = modulos;
+    public void setListModulos(List<es.desarrollo.hibernate.entities.modulo> listModulos) {
+        this.listModulos = listModulos;
     }
 
     public String getBtnAccion() {
@@ -69,5 +102,8 @@ public class moduloBean {
     }
 
     private void limpiar() {
+        this.moduloSelected.setId("");
+        this.moduloSelected.setNombre("");
+        this.moduloSelected.setTipo("");
     }
 }

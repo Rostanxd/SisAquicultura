@@ -21,13 +21,13 @@
         <p:growl id="growl" sticky="true" showDetail="true" life="3000"/>
         <h:panelGrid columns="2" cellpadding="5">
             <h:outputLabel for="username" value="Usuario:"/>
-            <p:inputText id="username" value="#{usuarioBean.usuario.id}" required="true" label="username"/>
+            <p:inputText id="username" value="#{loginBean.usuario.id}" required="true" label="username"/>
 
             <h:outputLabel for="password" value="Clave:"/>
-            <p:password id="password" value="#{usuarioBean.usuario.clave}" required="true" label="password"/>
+            <p:password id="password" value="#{loginBean.usuario.clave}" required="true" label="password"/>
 
             <f:facet name="footer">
-                <p:commandButton value="Ingresar" update="growl" action="#{usuarioBean.usuarioLogin()}"
+                <p:commandButton value="Ingresar" update="growl" action="#{loginBean.usuarioLogin()}"
                                  oncomplete="handleLoginRequest(xhr, status, args)" />
             </f:facet>
         </h:panelGrid>

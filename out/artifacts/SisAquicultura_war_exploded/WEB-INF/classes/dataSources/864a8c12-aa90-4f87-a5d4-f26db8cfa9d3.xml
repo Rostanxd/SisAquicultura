@@ -6,190 +6,200 @@
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
-    <schema id="3" parent="1" name="dbcongregacion"/>
-    <schema id="4" parent="1" name="dbdcarol"/>
-    <schema id="5" parent="1" name="information_schema"/>
-    <schema id="6" parent="1" name="mysql"/>
-    <schema id="7" parent="1" name="performance_schema"/>
-    <schema id="8" parent="1" name="dbconocimiento"/>
-    <schema id="9" parent="1" name="dbconocimiento_v2"/>
-    <schema id="10" parent="1" name="dbconocimiento_v3"/>
-    <schema id="11" parent="1" name="dcarol"/>
-    <schema id="12" parent="1" name="sys"/>
-    <table id="13" parent="2" name="sis_accesos"/>
-    <table id="14" parent="2" name="sis_accesos_det"/>
-    <table id="15" parent="2" name="sis_modulos"/>
-    <table id="16" parent="2" name="sis_programas"/>
-    <table id="17" parent="2" name="sis_usuarios"/>
-    <column id="18" parent="13" name="acc_codigo">
+    <schema id="3" parent="1" name="agenda"/>
+    <schema id="4" parent="1" name="base_curso_java_2015"/>
+    <schema id="5" parent="1" name="bdpruebas"/>
+    <schema id="6" parent="1" name="dbbaseconocimiento"/>
+    <schema id="7" parent="1" name="dbbaseconocimiento2"/>
+    <schema id="8" parent="1" name="dbcongregacion"/>
+    <schema id="9" parent="1" name="dbdcarol"/>
+    <schema id="10" parent="1" name="db_empresa"/>
+    <schema id="11" parent="1" name="db_facturacion"/>
+    <schema id="12" parent="1" name="facturacion"/>
+    <schema id="13" parent="1" name="information_schema"/>
+    <schema id="14" parent="1" name="knowledgedb"/>
+    <schema id="15" parent="1" name="mitocode"/>
+    <schema id="16" parent="1" name="mysql"/>
+    <schema id="17" parent="1" name="performance_schema"/>
+    <schema id="18" parent="1" name="test"/>
+    <schema id="19" parent="1" name="dbpythonpractica"/>
+    <schema id="20" parent="1" name="mycvmodel"/>
+    <schema id="21" parent="1" name="test_universidad"/>
+    <schema id="22" parent="1" name="universidad"/>
+    <table id="23" parent="2" name="sis_accesos"/>
+    <table id="24" parent="2" name="sis_accesos_det"/>
+    <table id="25" parent="2" name="sis_modulos"/>
+    <table id="26" parent="2" name="sis_programas"/>
+    <table id="27" parent="2" name="sis_usuarios"/>
+    <column id="28" parent="23" name="acc_codigo">
       <Position>1</Position>
       <DataType>varchar(2)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="19" parent="13" name="acc_nombre">
+    <column id="29" parent="23" name="acc_nombre">
       <Position>2</Position>
       <DataType>varchar(25)|0</DataType>
     </column>
-    <column id="20" parent="13" name="acc_fec_creacion">
+    <column id="30" parent="23" name="acc_fec_creacion">
       <Position>3</Position>
       <DataType>datetime|0</DataType>
     </column>
-    <column id="21" parent="13" name="acc_fec_modificacion">
+    <column id="31" parent="23" name="acc_fec_modificacion">
       <Position>4</Position>
       <DataType>datetime|0</DataType>
     </column>
-    <column id="22" parent="13" name="acc_usr_creacion">
+    <column id="32" parent="23" name="acc_usr_creacion">
       <Position>5</Position>
       <DataType>varchar(10)|0</DataType>
     </column>
-    <column id="23" parent="13" name="acc_usr_modificacion">
+    <column id="33" parent="23" name="acc_usr_modificacion">
       <Position>6</Position>
       <DataType>varchar(10)|0</DataType>
     </column>
-    <key id="24" parent="13" name="PRIMARY">
+    <key id="34" parent="23" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>acc_codigo</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="25" parent="14" name="acc_codigo">
+    <column id="35" parent="24" name="acc_codigo">
       <Position>1</Position>
       <DataType>varchar(2)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="26" parent="14" name="prg_codigo">
+    <column id="36" parent="24" name="prg_codigo">
       <Position>2</Position>
       <DataType>varchar(3)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="27" parent="14" name="acc_prg_anular">
+    <column id="37" parent="24" name="acc_prg_anular">
       <Position>3</Position>
       <DataType>bit(1)|0</DataType>
     </column>
-    <column id="28" parent="14" name="acc_prg_ejecuta">
+    <column id="38" parent="24" name="acc_prg_ejecuta">
       <Position>4</Position>
       <DataType>bit(1)|0</DataType>
     </column>
-    <column id="29" parent="14" name="acc_prg_imprimir">
+    <column id="39" parent="24" name="acc_prg_imprimir">
       <Position>5</Position>
       <DataType>bit(1)|0</DataType>
     </column>
-    <column id="30" parent="14" name="acc_prg_modificar">
+    <column id="40" parent="24" name="acc_prg_modificar">
       <Position>6</Position>
       <DataType>bit(1)|0</DataType>
     </column>
-    <column id="31" parent="14" name="acc_prg_nuevo">
+    <column id="41" parent="24" name="acc_prg_nuevo">
       <Position>7</Position>
       <DataType>bit(1)|0</DataType>
     </column>
-    <index id="32" parent="14" name="FK5oe4c601bg4x9t08o2y8q30ku">
+    <index id="42" parent="24" name="FK5oe4c601bg4x9t08o2y8q30ku">
       <ColNames>prg_codigo</ColNames>
     </index>
-    <key id="33" parent="14" name="PRIMARY">
+    <key id="43" parent="24" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>acc_codigo
 prg_codigo</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="34" parent="15" name="mod_codigo">
+    <column id="44" parent="25" name="mod_codigo">
       <Position>1</Position>
       <DataType>varchar(2)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="35" parent="15" name="mod_nombre">
+    <column id="45" parent="25" name="mod_nombre">
       <Position>2</Position>
       <DataType>varchar(25)|0</DataType>
     </column>
-    <column id="36" parent="15" name="mod_tipo">
+    <column id="46" parent="25" name="mod_tipo">
       <Position>3</Position>
       <DataType>varchar(3)|0</DataType>
     </column>
-    <key id="37" parent="15" name="PRIMARY">
+    <key id="47" parent="25" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>mod_codigo</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="38" parent="16" name="prg_codigo">
+    <column id="48" parent="26" name="prg_codigo">
       <Position>1</Position>
       <DataType>varchar(3)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="39" parent="16" name="prg_estado">
+    <column id="49" parent="26" name="prg_estado">
       <Position>2</Position>
       <DataType>varchar(1)|0</DataType>
     </column>
-    <column id="40" parent="16" name="prg_fec_creacion">
+    <column id="50" parent="26" name="prg_fec_creacion">
       <Position>3</Position>
       <DataType>datetime|0</DataType>
     </column>
-    <column id="41" parent="16" name="prg_fec_modificacion">
+    <column id="51" parent="26" name="prg_fec_modificacion">
       <Position>4</Position>
       <DataType>datetime|0</DataType>
     </column>
-    <column id="42" parent="16" name="prg_nombre">
+    <column id="52" parent="26" name="prg_nombre">
       <Position>5</Position>
       <DataType>varchar(25)|0</DataType>
     </column>
-    <column id="43" parent="16" name="prg_usr_creacion">
+    <column id="53" parent="26" name="prg_usr_creacion">
       <Position>6</Position>
       <DataType>varchar(10)|0</DataType>
     </column>
-    <column id="44" parent="16" name="prg_usr_modificacion">
+    <column id="54" parent="26" name="prg_usr_modificacion">
       <Position>7</Position>
       <DataType>varchar(10)|0</DataType>
     </column>
-    <column id="45" parent="16" name="mod_codigo">
+    <column id="55" parent="26" name="mod_codigo">
       <Position>8</Position>
       <DataType>varchar(2)|0</DataType>
     </column>
-    <index id="46" parent="16" name="FKhaair4bpm6q5tvcfjugasw2g7">
+    <column id="56" parent="26" name="prg_page">
+      <Position>9</Position>
+      <DataType>varchar(80)|0</DataType>
+    </column>
+    <index id="57" parent="26" name="FKhaair4bpm6q5tvcfjugasw2g7">
       <ColNames>mod_codigo</ColNames>
     </index>
-    <key id="47" parent="16" name="PRIMARY">
+    <key id="58" parent="26" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>prg_codigo</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="48" parent="17" name="usr_codigo">
+    <column id="59" parent="27" name="usr_codigo">
       <Position>1</Position>
       <DataType>varchar(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="49" parent="17" name="usr_clave">
+    <column id="60" parent="27" name="usr_clave">
       <Position>2</Position>
       <DataType>varchar(25)|0</DataType>
     </column>
-    <column id="50" parent="17" name="usr_estado">
+    <column id="61" parent="27" name="usr_estado">
       <Position>3</Position>
       <DataType>varchar(1)|0</DataType>
     </column>
-    <column id="51" parent="17" name="usr_fec_creacion">
+    <column id="62" parent="27" name="usr_fec_creacion">
       <Position>4</Position>
       <DataType>datetime|0</DataType>
     </column>
-    <column id="52" parent="17" name="usr_fec_modificacion">
+    <column id="63" parent="27" name="usr_fec_modificacion">
       <Position>5</Position>
       <DataType>datetime|0</DataType>
     </column>
-    <column id="53" parent="17" name="usr_usr_modificacion">
+    <column id="64" parent="27" name="usr_usr_modificacion">
       <Position>6</Position>
       <DataType>varchar(10)|0</DataType>
     </column>
-    <column id="54" parent="17" name="usr_usr_creacion">
+    <column id="65" parent="27" name="usr_usr_creacion">
       <Position>7</Position>
       <DataType>varchar(10)|0</DataType>
     </column>
-    <column id="55" parent="17" name="acc_codigo">
+    <column id="66" parent="27" name="acc_codigo">
       <Position>8</Position>
       <DataType>varchar(2)|0</DataType>
     </column>
-    <column id="56" parent="17" name="usr_tipo">
-      <Position>9</Position>
-      <DataType>varchar(1)|0</DataType>
-    </column>
-    <index id="57" parent="17" name="FK4ljiyk0ryskmr5owcluwn4m3n">
+    <index id="67" parent="27" name="FK4ljiyk0ryskmr5owcluwn4m3n">
       <ColNames>acc_codigo</ColNames>
     </index>
-    <key id="58" parent="17" name="PRIMARY">
+    <key id="68" parent="27" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>usr_codigo</ColNames>
       <Primary>1</Primary>

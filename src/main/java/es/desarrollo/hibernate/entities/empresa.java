@@ -2,46 +2,42 @@ package es.desarrollo.hibernate.entities;
 
 import javax.persistence.*;
 import java.util.Date;
-import java.util.Set;
+import java.util.List;
 
-/**
- * Created by Rostan on 23/08/2017.
- */
 @Entity
-@Table(name = "sis_accesos")
-public class acceso {
+@Table(name = "acu_empresas")
+public class empresa {
 
     @Id
-    @Column(name = "acc_codigo", length = 2)
-    private String id;
+    @Column(name = "emp_ruc",length = 13)
+    private String ruc;
 
-    @Column(name = "acc_nombre", length = 25)
+    @Column(name = "emp_nombre", length = 30)
     private String nombre;
 
-    @Column(name = "acc_usr_creacion", length = 10)
+    @Column(name = "usr_creacion", length = 10)
     private String usuarioCreacion;
 
-    @Column(name = "acc_fec_creacion")
+    @Column(name = "fec_creacion")
     private Date fechaCreacion;
 
-    @Column(name = "acc_usr_modificacion", length = 10)
+    @Column(name = "usr_modificacion", length = 10)
     private String usuarioModificacion;
 
-    @Column(name = "acc_fec_modificacion")
+    @Column(name = "fec_modificacion")
     private Date fechaModificacion;
 
-//    RELACIONES
-    @OneToMany(mappedBy = "acceso", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    private Set<accesoDetalle> detalles;
+    @OneToMany(mappedBy = "empresa", cascade = CascadeType.ALL)
+    private List<aceiteQuemado> listAceiteQuemado;
 
-//    CONSTRUCTOR
-    public acceso() {}
+    @OneToMany(mappedBy = "empresa", cascade = CascadeType.ALL)
+    private List<empresaUsuario> listEmpresasUsuarios;
 
 //    METODOS
     @Override
     public String toString() {
-        return "acceso{" +
-                "id='" + id + '\'' +
+        return "empresa{" +
+                "ruc='" + ruc + '\'' +
                 ", nombre='" + nombre + '\'' +
                 ", usuarioCreacion='" + usuarioCreacion + '\'' +
                 ", fechaCreacion=" + fechaCreacion +
@@ -50,13 +46,17 @@ public class acceso {
                 '}';
     }
 
-    //    GETTER Y SETTER
-    public String getId() {
-        return id;
+    //    CONSTRUCTOR
+    public empresa() {
     }
 
-    public void setId(String id) {
-        this.id = id;
+//    GETTER Y SETTER
+    public String getRuc() {
+        return ruc;
+    }
+
+    public void setRuc(String ruc) {
+        this.ruc = ruc;
     }
 
     public String getNombre() {
@@ -97,13 +97,5 @@ public class acceso {
 
     public void setFechaModificacion(Date fechaModificacion) {
         this.fechaModificacion = fechaModificacion;
-    }
-
-    public Set<accesoDetalle> getDetalles() {
-        return detalles;
-    }
-
-    public void setDetalles(Set<accesoDetalle> detalles) {
-        this.detalles = detalles;
     }
 }

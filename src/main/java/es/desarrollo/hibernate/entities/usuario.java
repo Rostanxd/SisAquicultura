@@ -2,6 +2,7 @@ package es.desarrollo.hibernate.entities;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 /**
  * Created by Rostan on 22/08/2017.
@@ -27,17 +28,17 @@ public class usuario {
     private Date fechaCreacion;
 
     @Column(name = "usr_usr_modificacion", length = 10)
-    private String usrModificacion;
+    private String usuarioModificacion;
 
     @Column(name = "usr_fec_modificacion")
     private Date fechaModificacion;
 
-    @Column(name = "usr_tipo", length = 1)
-    private String tipo;
-
     @OneToOne
     @JoinColumn(name = "acc_codigo")
     private acceso acceso;
+
+    @OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL)
+    private List<empresaUsuario> listEmpresasUsuarios;
 
     //    CONSTRUCTOR
     public usuario() {
@@ -50,6 +51,8 @@ public class usuario {
     }
 
     //    METODOS
+
+
     @Override
     public String toString() {
         return "usuario{" +
@@ -58,9 +61,22 @@ public class usuario {
                 ", estado='" + estado + '\'' +
                 ", usuarioCreacion='" + usuarioCreacion + '\'' +
                 ", fechaCreacion=" + fechaCreacion +
-                ", usrModificacion='" + usrModificacion + '\'' +
+                ", usuarioModificacion='" + usuarioModificacion + '\'' +
                 ", fechaModificacion=" + fechaModificacion +
+                ", acceso=" + acceso.getId() + " nombre=" + acceso.getNombre() +
                 '}';
+    }
+
+    public String estadoText(){
+        String estadoText = "";
+        if (!estado.equals("")){
+            if (estado.equals("A")){
+                estadoText = "Activo";
+            }else{
+                estadoText = "Inactivo";
+            }
+        }
+        return estadoText;
     }
 
     //    GETTER Y SETTER
@@ -104,12 +120,12 @@ public class usuario {
         this.fechaCreacion = fechaCreacion;
     }
 
-    public String getUsrModificacion() {
-        return usrModificacion;
+    public String getUsuarioModificacion() {
+        return usuarioModificacion;
     }
 
-    public void setUsrModificacion(String usrModificacion) {
-        this.usrModificacion = usrModificacion;
+    public void setUsuarioModificacion(String usrModificacion) {
+        this.usuarioModificacion = usrModificacion;
     }
 
     public Date getFechaModificacion() {
@@ -128,11 +144,4 @@ public class usuario {
         this.acceso = acceso;
     }
 
-    public String getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
 }

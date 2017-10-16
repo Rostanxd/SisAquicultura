@@ -16,7 +16,7 @@ public class usuarioTest {
 
     private static void listarUsuarios() {
         usuarioDAO usuarioDAO = new usuarioDAO();
-        List<usuario> usuarios = usuarioDAO.listarUsuarios();
+        List<usuario> usuarios = usuarioDAO.listar();
         System.out.println("Usuarios en el sistema...");
         for (usuario u : usuarios) {
             System.out.println("    - " + u.toString());

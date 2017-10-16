@@ -1,60 +1,161 @@
 package es.desarrollo.hibernate.beans;
 
+import es.desarrollo.hibernate.dao.accesoDAO;
 import es.desarrollo.hibernate.dao.usuarioDAO;
+import es.desarrollo.hibernate.entities.acceso;
 import es.desarrollo.hibernate.entities.usuario;
-import org.primefaces.context.RequestContext;
 
-import javax.faces.application.FacesMessage;
+import javax.annotation.PostConstruct;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
 import javax.faces.context.ExternalContext;
 import javax.faces.context.FacesContext;
-import javax.faces.event.ActionEvent;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.List;
 import java.util.Map;
 
-/**
- * Created by Rostan on 22/08/2017.
- */
 @ManagedBean
 @ViewScoped
 public class usuarioBean {
 
+    private usuario usuarioSistema = new usuario();
+
     private usuario usuario = new usuario();
 
-    //    METODOS
-    public String usuarioLogin() {
-        String res = "";
-        RequestContext context = RequestContext.getCurrentInstance();
-        FacesMessage message;
-        boolean loggedIn;
+    private usuario usuarioSelected = new usuario();
 
+    private List<usuario> lstUsuarios = new ArrayList<>();
+
+    private String btnAccion = "";
+
+    private String claveNueva = "";
+
+    private String claveVerifica = "";
+
+    private List<acceso> listAccesos = new ArrayList<>();
+
+//    METODOS
+    @PostConstruct
+    public void init(){
+        ExternalContext externalContext = FacesContext.getCurrentInstance().getExternalContext();
+        Map<String, Object> sessionMap = externalContext.getSessionMap();
+        String idUsuario = (String) sessionMap.get("usuario");
         usuarioDAO usuarioDAO = new usuarioDAO();
-        if (usuarioDAO.validaUsuario(this.usuario) != null) {
-            loggedIn = true;
-            message = new FacesMessage(FacesMessage.SEVERITY_INFO, "Bienvenido!", usuario.getId());
-            res = "home.xhtml";
-        }else {
-            loggedIn = false;
-            message = new FacesMessage(FacesMessage.SEVERITY_WARN, "Error de Inicio", "Usuario o contraseña incorrecta.");
-        }
+        this.usuarioSistema = usuarioDAO.buscaUsuarioId(idUsuario);
 
-        FacesContext.getCurrentInstance().addMessage(null, message);
-        context.addCallbackParam("loggedIn", loggedIn);
-        if (loggedIn){
-            ExternalContext externalContext = FacesContext.getCurrentInstance().getExternalContext();
-            Map<String, Object> sessionMap = externalContext.getSessionMap();
-            sessionMap.put("usuario", this.usuario.getId());
-        }
+        this.lstUsuarios = usuarioDAO.listar();
 
-        return res;
+        accesoDAO accesoDAO = new accesoDAO();
+        this.listAccesos = accesoDAO.listar();
     }
 
-    //    GETTER Y SETTER
+    public void operar(){
+        switch (btnAccion){
+            case "Ingresar":
+                this.ingresarUsuario();
+                this.limpiar();
+                break;
+            case "Actualizar":
+                this.actualizarUsuario();
+                this.limpiar();
+                break;
+        }
+    }
+
+    public void setBtnAccion(String btnAccion) {
+        this.btnAccion = btnAccion;
+        switch (this.btnAccion){
+            case "Ingresar":
+                this.limpiar();
+                break;
+            case "Actualizar":
+                this.usuarioSelected = this.usuario;
+                System.out.println(this.usuarioSelected.toString());
+                break;
+        }
+    }
+
+    private void limpiar(){
+        this.claveNueva = "";
+        this.claveVerifica = "";
+
+        this.usuarioSelected.setId("");
+        this.usuarioSelected.setClave("");
+        this.usuarioSelected.setEstado("A");
+        this.usuarioSelected.setFechaCreacion(Calendar.getInstance().getTime());
+        this.usuarioSelected.setUsuarioCreacion(this.usuarioSistema.getId());
+        this.usuarioSelected.setFechaModificacion(Calendar.getInstance().getTime());
+        this.usuarioSelected.setUsuarioModificacion(this.usuarioSistema.getId());
+        this.usuarioSelected.setAcceso(null);
+    }
+
+    private void ingresarUsuario(){
+        usuarioDAO usuarioDAO = new usuarioDAO();
+        usuarioDAO.registar(usuarioSelected);
+
+        this.lstUsuarios.clear();
+        this.lstUsuarios = usuarioDAO.listar();
+    }
+
+    private void actualizarUsuario(){
+        usuarioDAO usuarioDAO = new usuarioDAO();
+        usuarioDAO.actualizar(usuarioSelected);
+
+        this.lstUsuarios.clear();
+        this.lstUsuarios = usuarioDAO.listar();
+    }
+
+//    GETTERS Y SETTERS
     public es.desarrollo.hibernate.entities.usuario getUsuario() {
         return usuario;
     }
 
     public void setUsuario(es.desarrollo.hibernate.entities.usuario usuario) {
         this.usuario = usuario;
+    }
+
+    public es.desarrollo.hibernate.entities.usuario getUsuarioSelected() {
+        return usuarioSelected;
+    }
+
+    public void setUsuarioSelected(es.desarrollo.hibernate.entities.usuario usuarioSelected) {
+        this.usuarioSelected = usuarioSelected;
+    }
+
+    public List<es.desarrollo.hibernate.entities.usuario> getLstUsuarios() {
+        return lstUsuarios;
+    }
+
+    public void setLstUsuarios(List<es.desarrollo.hibernate.entities.usuario> lstUsuarios) {
+        this.lstUsuarios = lstUsuarios;
+    }
+
+    public String getBtnAccion() {
+        return btnAccion;
+    }
+
+    public String getClaveNueva() {
+        return claveNueva;
+    }
+
+    public void setClaveNueva(String claveNueva) {
+        this.claveNueva = claveNueva;
+    }
+
+    public String getClaveVerifica() {
+        return claveVerifica;
+    }
+
+    public void setClaveVerifica(String claveVerifica) {
+        this.claveVerifica = claveVerifica;
+    }
+
+    public List<acceso> getListAccesos() {
+        return listAccesos;
+    }
+
+    public void setListAccesos(List<acceso> listAccesos) {
+        this.listAccesos = listAccesos;
     }
 }

@@ -48,7 +48,7 @@ public class menuBean {
 
 //        Genero la lista de modulos del usuario, por el tipo de usuario.
         moduloDAO moduloDAO = new moduloDAO();
-        this.modulos = moduloDAO.listarModulosTipoUsuario(this.usuario.getTipo());
+        this.modulos = moduloDAO.listarModulosAcceso(this.usuario);
 
         model = new DefaultMenuModel();
         for (modulo m : this.modulos){

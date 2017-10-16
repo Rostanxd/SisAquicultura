@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+    <title>Sistema de Aquicultura 1.0</title>
+</h:head>
+<h:body>
+    <ui:composition template="./WEB-INF/templates/plantilla.xhtml">
+        <ui:define name="content">
+            <h:form id="form">
+                <p:dataTable id="dataEmpresas" var="empresa" value="#{empresaBean.listEmpresas}"
+                             selectionMode="single" selection="#{empresaBean.empresa}" rowKey="#{empresa.emp_ruc}"
+                             style="font-size: smaller; width: auto;" emptyMessage="No hay datos." scrollable="true" scrollHeight="500px">
+                    <f:facet name="header"  >
+                        Empresas
+                    </f:facet>
+                    <p:column headerText="RUC" filterBy="#{empresa.ruc}" filterMatchMode="contains" style="width: 50px">
+                        <p:outputLabel value="#{empresa.ruc}"/>
+                    </p:column>
+                    <p:column headerText="Nombre" filterBy="#{empresa.nombre}" filterMatchMode="contains" style="width: 150px">
+                        <p:outputLabel value="#{empresa.nombre}"/>
+                    </p:column>
+                    <f:facet name="footer">
+                        <p:commandButton value="Ingresar" id="ingresar" actionListener="#{aceiteQuemadoBean.setBtnAccion('Ingresar')}" icon="ui-icon-disk" oncomplete="PF('wdgAceite').show();"/>
+                        <p:commandButton value="Modificar" id="modificar" actionListener="#{aceiteQuemadoBean.setBtnAccion('Actualizar')}" icon="ui-icon-disk" oncomplete="PF('wdgAceite').show();" update=":dlgAceite" />
+                    </f:facet>
+                </p:dataTable>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+</h:body>
+</html>

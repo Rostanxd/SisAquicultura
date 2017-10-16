@@ -8,6 +8,8 @@
         <class>es.desarrollo.hibernate.entities.accesoDetalle</class>
         <class>es.desarrollo.hibernate.entities.modulo</class>
         <class>es.desarrollo.hibernate.entities.programa</class>
+        <class>es.desarrollo.hibernate.entities.empresa</class>
+        <class>es.desarrollo.hibernate.entities.aceiteQuemado</class>
 
         <properties>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
