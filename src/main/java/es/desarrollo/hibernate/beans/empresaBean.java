@@ -1,6 +1,7 @@
 package es.desarrollo.hibernate.beans;
 
 import javax.annotation.PostConstruct;
+import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
 import javax.faces.context.ExternalContext;
@@ -10,6 +11,7 @@ import es.desarrollo.hibernate.dao.empresaDAO;
 import es.desarrollo.hibernate.dao.usuarioDAO;
 import es.desarrollo.hibernate.entities.empresa;
 import es.desarrollo.hibernate.entities.usuario;
+import org.primefaces.context.RequestContext;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -29,6 +31,8 @@ public class empresaBean {
     private usuario usuario = new usuario();
 
     private String btnAccion = "";
+
+    private boolean seleccion = false;
 
     @PostConstruct
     public void init(){
@@ -130,4 +134,11 @@ public class empresaBean {
         }
     }
 
+    public boolean isSeleccion() {
+        return seleccion;
+    }
+
+    public void setSeleccion(boolean seleccion) {
+        this.seleccion = seleccion;
+    }
 }

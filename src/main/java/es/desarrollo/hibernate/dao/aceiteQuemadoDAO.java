@@ -18,7 +18,20 @@ public class aceiteQuemadoDAO implements IAceiteQuemadoDAO{
 //    CRUD
     @Override
     public boolean registrar(aceiteQuemado aceiteQuemado, String usuario) {
-        return false;
+        boolean registrado = false;
+        EntityManager em = emf.createEntityManager();
+        try {
+            em.getTransaction().begin();
+            em.persist(aceiteQuemado);
+            em.getTransaction().commit();
+            registrado = true;
+        }catch (Exception e){
+            em.getTransaction().rollback();
+            e.getStackTrace();
+        }finally {
+            em.close();
+        }
+        return registrado;
     }
 
     @Override

@@ -39,17 +39,62 @@
                 </p:dataTable>
             </h:form>
 
-            <p:dialog id="dlgAceite" header="Aceite Quemado" widgetVar="wdgAceite" modal="true" width="770" style="font-size: smaller">
+            <p:dialog id="dlgAceite" header="Aceite Quemado" widgetVar="wdgAceite" modal="true"
+                      width="550" style="font-size: smaller">
                 <h:form id="dialogForm">
                     <p:panelGrid>
                         <p:row>
                             <p:column>
                                 <p:outputLabel value="Empresa" style="font-weight: bold; color: darkred" />
                             </p:column>
+                            <p:column>
+                                <p:selectOneMenu id="empresa" value="#{aceiteQuemadoBean.aqUpd.empresa}"
+                                                 converter="omnifaces.SelectItemsConverter"
+                                                 required="true" requiredMessage="Seleccione una empresa!"
+                                                 disabled="#{aceiteQuemadoBean.btnAccion eq 'Actualizar'}">
+                                    <f:selectItem itemLabel="Seleccione..." itemValue="#{null}" />
+                                    <f:selectItems value="#{aceiteQuemadoBean.listEmpresas}" var="empresa"
+                                                   itemLabel="#{empresa.nombre}" itemValue="#{empresa}"/>
+                                </p:selectOneMenu>
+                            </p:column>
+                            <p:column>
+                                <p:outputLabel value="Mes" style="font-weight: bold; color: darkred" />
+                            </p:column>
+                            <p:column>
+                                <p:selectOneMenu id="mes" value="#{aceiteQuemadoBean.aqUpd.acq_mes}"
+                                                 disabled="#{aceiteQuemadoBean.btnAccion eq 'Actualizar'}"
+                                                 converter="omnifaces.SelectItemsConverter">
+                                    <f:selectItem itemLabel="Seleccione..." itemValue="" />
+                                    <f:selectItems value="#{aceiteQuemadoBean.meses}"
+                                                   var="mes" itemLabel="#{mes}" itemValue="#{mes.hashCode()}"/>
+                                </p:selectOneMenu>
+                            </p:column>
                         </p:row>
                         <p:row>
                             <p:column>
-                                <p:outputLabel value="Mes" style="font-weight: bold; color: darkred" />
+                                <p:outputLabel value="Fecha Ingreso" style="font-weight: bold;"/>
+                            </p:column>
+                            <p:column>
+                                <p:calendar id="inline" value="#{aceiteQuemadoBean.aqUpd.fechaIngreso}"/>
+                            </p:column>
+                            <p:column>
+                                <p:outputLabel value="Estado" style="font-weight: bold;"/>
+                            </p:column>
+                            <p:column>
+                                <p:selectOneMenu id="estado" value="#{aceiteQuemadoBean.aqUpd.estado}"
+                                                 converter="omnifaces.SelectItemsConverter">
+                                    <f:selectItem itemLabel="Seleccione..." itemValue="" />
+                                    <f:selectItems value="#{aceiteQuemadoBean.estados}"
+                                                   var="estado" itemLabel="#{estado}" itemValue="#{estado}"/>
+                                </p:selectOneMenu>
+                            </p:column>
+                        </p:row>
+                        <p:row>
+                            <p:column>
+                                <p:outputLabel value="Descripción" style="font-weight: bold;"/>
+                            </p:column>
+                            <p:column colspan="3">
+                                <p:inputTextarea rows="6" cols="50" value="#{aceiteQuemadoBean.aqUpd.fichaDescripcion}"/>
                             </p:column>
                         </p:row>
                     </p:panelGrid>

@@ -9,6 +9,7 @@
         <class>es.desarrollo.hibernate.entities.modulo</class>
         <class>es.desarrollo.hibernate.entities.programa</class>
         <class>es.desarrollo.hibernate.entities.empresa</class>
+        <class>es.desarrollo.hibernate.entities.empresaUsuario</class>
         <class>es.desarrollo.hibernate.entities.aceiteQuemado</class>
 
         <properties>

@@ -1,5 +1,6 @@
 package es.desarrollo.hibernate.dao;
 
+import es.desarrollo.hibernate.entities.empresa;
 import es.desarrollo.hibernate.entities.usuario;
 import es.desarrollo.hibernate.idao.IUsuarioDAO;
 
@@ -36,6 +37,14 @@ public class usuarioDAO implements IUsuarioDAO{
             System.out.println(e.toString());
         }
         return usuario;
+    }
+
+    public List<empresa> listarEmpresasUsr(usuario usuario){
+        EntityManager em = emf.createEntityManager();
+        Query qry = em.createQuery("SELECT eu.empresa FROM empresaUsuario as eu " +
+                "WHERE eu.usuario.id =:usrCodigo");
+        qry.setParameter("usrCodigo", usuario.getId());
+        return (List<empresa>) qry.getResultList();
     }
 
 //    CRUD
