@@ -1,5 +1,7 @@
 package es.desarrollo.hibernate.entities;
 
+import es.desarrollo.servicio.Utils;
+
 import javax.persistence.*;
 import java.util.Date;
 
@@ -37,7 +39,21 @@ public class aceiteQuemado {
     public aceiteQuemado() {
     }
 
-//    GETTER Y SETTER
+//    METODOS
+    @Override
+    public String toString() {
+        return "aceiteQuemado{" +
+                "emp_ruc='" + emp_ruc + '\'' +
+                ", acq_mes=" + acq_mes +
+                ", fechaIngreso=" + fechaIngreso +
+                ", estado='" + estado + '\'' +
+                ", fichaDescripcion='" + fichaDescripcion + '\'' +
+                ", fichaObservacion='" + fichaObservacion + '\'' +
+                ", empresa=" + empresa +
+                '}';
+    }
+
+    //    GETTER Y SETTER
     public String getEmp_ruc() {
         return emp_ruc;
     }
@@ -92,5 +108,13 @@ public class aceiteQuemado {
 
     public void setEmpresa(es.desarrollo.hibernate.entities.empresa empresa) {
         this.empresa = empresa;
+    }
+
+    public String mesString(){
+        return Utils.mesString(this.acq_mes);
+    }
+
+    public String estadoString(){
+        return Utils.estadoString(this.estado);
     }
 }

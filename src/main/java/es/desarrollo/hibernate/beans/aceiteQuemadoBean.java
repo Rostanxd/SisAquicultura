@@ -5,8 +5,11 @@ import es.desarrollo.hibernate.dao.usuarioDAO;
 import es.desarrollo.hibernate.entities.aceiteQuemado;
 import es.desarrollo.hibernate.entities.empresa;
 import es.desarrollo.hibernate.entities.usuario;
+import es.desarrollo.servicio.Utils;
+import org.primefaces.context.RequestContext;
 
 import javax.annotation.PostConstruct;
+import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
 import javax.faces.context.ExternalContext;
@@ -29,11 +32,13 @@ public class aceiteQuemadoBean {
 
     private List<empresa> listEmpresas = new ArrayList<>();
 
-    private Map<Integer, String> meses;
+    private Map<Integer, String> listMeses;
 
-    private Map<String, String> estados;
+    private Map<String, String> listEstados;
 
-    private Integer mes;
+    private String estado;
+
+    private String mes;
 
     @PostConstruct
     public void init(){
@@ -42,12 +47,19 @@ public class aceiteQuemadoBean {
         Map<String, Object> sessionMap = externalContext.getSessionMap();
         usuarioDAO usuarioDAO = new usuarioDAO();
         this.usuario = usuarioDAO.buscaUsuarioId((String) sessionMap.get("usuario"));
+
+        this.listarAceiteQuemedo();
         this.empresasUsuario();
         this.cargarMeses();
         this.cargarEstados();
     }
 
 //    METODOS
+    private boolean validaMesEmpresa(){
+        aceiteQuemadoDAO aceiteQuemadoDAO = new aceiteQuemadoDAO();
+        return aceiteQuemadoDAO.validaMesEmpresa(this.aqUpd.getEmpresa(), Utils.mesInt(this.mes));
+    }
+
     private void listarAceiteQuemedo(){
         aceiteQuemadoDAO aqd = new aceiteQuemadoDAO();
         this.listAq = aqd.listar();
@@ -59,33 +71,39 @@ public class aceiteQuemadoBean {
     }
 
     private void cargarMeses(){
-        meses = new HashMap<Integer, String>();
-        meses.put(1, "Enero");
-        meses.put(2,"Febrero");
-        meses.put(3,"Marzo");
-        meses.put(4,"Abril");
-        meses.put(5,"Mayo");
-        meses.put(6,"Junio");
-        meses.put(7,"Julio");
-        meses.put(8,"Agosto");
-        meses.put(9,"Septiembre");
-        meses.put(10,"Octubre");
-        meses.put(11,"Noviembre");
-        meses.put(12,"Diciembre");
+        listMeses = new HashMap<Integer, String>();
+        listMeses.put(1, "Enero");
+        listMeses.put(2,"Febrero");
+        listMeses.put(3,"Marzo");
+        listMeses.put(4,"Abril");
+        listMeses.put(5,"Mayo");
+        listMeses.put(6,"Junio");
+        listMeses.put(7,"Julio");
+        listMeses.put(8,"Agosto");
+        listMeses.put(9,"Septiembre");
+        listMeses.put(10,"Octubre");
+        listMeses.put(11,"Noviembre");
+        listMeses.put(12,"Diciembre");
     }
 
     private void cargarEstados(){
-        estados = new HashMap<String, String>();
-        estados.put("P", "Pendiente");
-        estados.put("A", "Activo");
-        estados.put("R", "Revisado");
+        listEstados = new HashMap<String, String>();
+        listEstados.put("E", "Pendiente");
+        listEstados.put("A", "Activo");
+        listEstados.put("R", "Revisado");
     }
 
     public void operar(){
         switch (btnAccion){
             case "Ingresar":
-                this.ingresarRegistro();
-                this.limpiar();
+                if (!this.validaMesEmpresa()){
+                    this.ingresarRegistro();
+                    this.limpiar();
+                    FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "Listo!", "Registro ingresado con éxito."));
+//                    RequestContext.getCurrentInstance().execute("dialogWidgetVar.hide()");
+                }else{
+                    FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "Error", "Mes ya registrado."));
+                }
                 break;
             case "Actualizar":
                 this.actualizarRegistro();
@@ -95,13 +113,13 @@ public class aceiteQuemadoBean {
     }
 
     private void limpiar() {
+        this.setMes("");
+        this.setEstado("Pendiente");
+
         this.aqUpd.setEmp_ruc("");
-        this.aqUpd.setAcq_mes(0);
-        this.aqUpd.setEstado("E");
         this.aqUpd.setFichaDescripcion("");
         this.aqUpd.setFichaObservacion("");
         this.aqUpd.setFechaIngreso(Calendar.getInstance().getTime());
-
     }
 
     private void actualizarRegistro() {
@@ -113,6 +131,20 @@ public class aceiteQuemadoBean {
     }
 
     private void ingresarRegistro() {
+        for (Integer key : listMeses.keySet()){
+            if (listMeses.get(key).equals(this.mes)){
+                this.aqUpd.setAcq_mes(key);
+            }
+        }
+
+        for (String key : listEstados.keySet()){
+            if (listEstados.get(key).equals(this.estado)){
+                this.aqUpd.setEstado(key);
+            }
+        }
+
+        System.out.println(this.aqUpd.toString());
+
         aceiteQuemadoDAO aceiteQuemadoDAO = new aceiteQuemadoDAO();
         aceiteQuemadoDAO.registrar(aqUpd, this.usuario.getId());
 
@@ -157,6 +189,8 @@ public class aceiteQuemadoBean {
                 break;
             case "Actualizar":
                 this.aqUpd = this.aq;
+                this.mes = Utils.mesString(this.aq.getAcq_mes());
+                this.estado= Utils.estadoString(this.aq.getEstado());
                 break;
         }
     }
@@ -173,27 +207,35 @@ public class aceiteQuemadoBean {
         this.listEmpresas = listEmpresas;
     }
 
-    public Map<Integer, String> getMeses() {
-        return meses;
+    public Map<Integer, String> getListMeses() {
+        return listMeses;
     }
 
-    public void setMeses(Map<Integer, String> meses) {
-        this.meses = meses;
+    public void setListMeses(Map<Integer, String> listMeses) {
+        this.listMeses = listMeses;
     }
 
-    public Map<String, String> getEstados() {
-        return estados;
+    public Map<String, String> getListEstados() {
+        return listEstados;
     }
 
-    public void setEstados(Map<String, String> estados) {
-        this.estados = estados;
+    public void setListEstados(Map<String, String> listEstados) {
+        this.listEstados = listEstados;
     }
 
-    public Integer getMes() {
+    public String getMes() {
         return mes;
     }
 
-    public void setMes(Integer mes) {
+    public void setMes(String mes) {
         this.mes = mes;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
     }
 }

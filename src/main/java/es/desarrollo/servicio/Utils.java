@@ -50,4 +50,79 @@ public class Utils {
         }
         return mes;
     }
+
+    public static String mesString(int numMes){
+        String mes = "";
+        switch (numMes){
+            case 1:
+                mes = "Enero";
+                break;
+            case 2:
+                mes = "Febrero";
+                break;
+            case 3:
+                mes = "Marzo";
+                break;
+            case 4:
+                mes = "Abril";
+                break;
+            case 5:
+                mes = "Mayo";
+                break;
+            case 6:
+                mes = "Junio";
+                break;
+            case 7:
+                mes = "Julio";
+                break;
+            case 8:
+                mes = "Agosto";
+                break;
+            case 9:
+                mes = "Septiembre";
+                break;
+            case 10:
+                mes = "Octubre";
+                break;
+            case 11:
+                mes = "Noviembre";
+                break;
+            case 12:
+                mes = "Diciembre";
+                break;
+        }
+        return mes;
+    }
+
+    public static String estadoString(String estadoLetra){
+        String estadoString = "";
+        switch (estadoLetra){
+            case "E":
+                estadoString = "Pendiente";
+                break;
+            case "A":
+                estadoString = "Activo";
+                break;
+            case "R":
+                estadoString = "Revisado";
+                break;
+        }
+        return estadoString;
+    }
+
+    public static String estadoLetra(String estadoString){
+        String estadoLetra = "";
+        switch (estadoString){
+            case "Pendiente":
+                estadoString = "E";
+                break;
+            case "Activo":
+                estadoString = "A";
+                break;
+            case "Revisado":
+                estadoString = "R";
+                break;
+        }
+        return estadoString;
+    }
 }

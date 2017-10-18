@@ -22,17 +22,18 @@
                     <p:column headerText="Empresa" filterBy="#{aceite.empresa.nombre}" filterMatchMode="contains" style="width: 50px">
                         <p:outputLabel value="#{aceite.empresa.nombre}"/>
                     </p:column>
-                    <p:column headerText="Nombre" filterBy="#{aceite.acq_mes}" filterMatchMode="contains" style="width: 150px">
-                        <p:outputLabel value="#{aceite.acq_mes}"/>
+                    <p:column headerText="Nombre" filterBy="#{aceite.mesString()}" filterMatchMode="contains" style="width: 150px">
+                        <p:outputLabel value="#{aceite.mesString()}"/>
                     </p:column>
                     <p:column headerText="Fec. Ingreso" style="width: 150px">
                         <p:outputLabel value="#{aceite.fechaIngreso}"/>
                     </p:column>
                     <p:column headerText="Estado" style="width: 150px">
-                        <p:outputLabel value="#{aceite.estado}"/>
+                        <p:outputLabel value="#{aceite.estadoString()}"/>
                     </p:column>
                     <f:facet name="footer">
-                        <p:commandButton value="Ingresar" id="ingresar" actionListener="#{aceiteQuemadoBean.setBtnAccion('Ingresar')}" icon="ui-icon-disk" oncomplete="PF('wdgAceite').show();"
+                        <p:commandButton value="Ingresar" id="ingresar" actionListener="#{aceiteQuemadoBean.setBtnAccion('Ingresar')}"
+                                         icon="ui-icon-disk" oncomplete="PF('wdgAceite').show();"
                                          update=":dlgAceite" disabled="#{aceiteQuemadoBean.usuario.getAcceso().id ne '01'}"/>
                         <p:commandButton value="Modificar" id="modificar" actionListener="#{aceiteQuemadoBean.setBtnAccion('Actualizar')}" icon="ui-icon-disk" oncomplete="PF('wdgAceite').show();" update=":dlgAceite" />
                     </f:facet>
@@ -42,6 +43,7 @@
             <p:dialog id="dlgAceite" header="Aceite Quemado" widgetVar="wdgAceite" modal="true"
                       width="550" style="font-size: smaller">
                 <h:form id="dialogForm">
+                    <p:messages id="messages" showDetail="true" autoUpdate="true" closable="true" />
                     <p:panelGrid>
                         <p:row>
                             <p:column>
@@ -61,12 +63,12 @@
                                 <p:outputLabel value="Mes" style="font-weight: bold; color: darkred" />
                             </p:column>
                             <p:column>
-                                <p:selectOneMenu id="mes" value="#{aceiteQuemadoBean.aqUpd.acq_mes}"
+                                <p:selectOneMenu id="mes" value="#{aceiteQuemadoBean.mes}"
                                                  disabled="#{aceiteQuemadoBean.btnAccion eq 'Actualizar'}"
-                                                 converter="omnifaces.SelectItemsConverter">
-                                    <f:selectItem itemLabel="Seleccione..." itemValue="" />
-                                    <f:selectItems value="#{aceiteQuemadoBean.meses}"
-                                                   var="mes" itemLabel="#{mes}" itemValue="#{mes.hashCode()}"/>
+                                                 required="true" requiredMessage="Seleccione una mes!">
+                                    <f:selectItem itemLabel="Seleccione..." itemValue="#{null}" noSelectionOption="true"/>
+                                    <f:selectItems value="#{aceiteQuemadoBean.listMeses}"
+                                                   var="mes" itemLabel="#{mes}"/>
                                 </p:selectOneMenu>
                             </p:column>
                         </p:row>
@@ -81,11 +83,10 @@
                                 <p:outputLabel value="Estado" style="font-weight: bold;"/>
                             </p:column>
                             <p:column>
-                                <p:selectOneMenu id="estado" value="#{aceiteQuemadoBean.aqUpd.estado}"
-                                                 converter="omnifaces.SelectItemsConverter">
-                                    <f:selectItem itemLabel="Seleccione..." itemValue="" />
-                                    <f:selectItems value="#{aceiteQuemadoBean.estados}"
-                                                   var="estado" itemLabel="#{estado}" itemValue="#{estado}"/>
+                                <p:selectOneMenu id="estado" value="#{aceiteQuemadoBean.estado}" disabled="true">
+                                    <f:selectItem itemLabel="Seleccione..." itemValue="#{null}" noSelectionOption="true" />
+                                    <f:selectItems value="#{aceiteQuemadoBean.listEstados}" var="estado"
+                                                   itemLabel="#{estado}"/>
                                 </p:selectOneMenu>
                             </p:column>
                         </p:row>
@@ -97,8 +98,16 @@
                                 <p:inputTextarea rows="6" cols="50" value="#{aceiteQuemadoBean.aqUpd.fichaDescripcion}"/>
                             </p:column>
                         </p:row>
+                        <p:row>
+                            <p:column>
+                                <p:outputLabel value="Observación" style="font-weight: bold;"/>
+                            </p:column>
+                            <p:column colspan="3">
+                                <p:inputTextarea rows="6" cols="50" value="#{aceiteQuemadoBean.aqUpd.fichaObservacion}" disabled="true"/>
+                            </p:column>
+                        </p:row>
                     </p:panelGrid>
-                    <p:commandButton value="#{aceiteQuemadoBean.btnAccion}" action="#{aceiteQuemadoBean.operar()}" oncomplete="PF('wdgAceite').hide()" update=":form"/>
+                    <p:commandButton value="#{aceiteQuemadoBean.btnAccion}" action="#{aceiteQuemadoBean.operar()}" update=":dialogForm, :form"/>
                     <p:commandButton value="Cancel" oncomplete="PF('wdgAceite').hide()" immediate="true"/>
                 </h:form>
             </p:dialog>
