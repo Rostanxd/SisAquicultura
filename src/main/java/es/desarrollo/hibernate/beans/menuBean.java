@@ -52,12 +52,9 @@ public class menuBean {
 
         model = new DefaultMenuModel();
         for (modulo m : this.modulos){
-            System.out.println(m.getNombre());
             DefaultSubMenu submenu = new DefaultSubMenu(m.getNombre());
 
             for (accesoDetalle ad : accesoDetalles){
-                System.out.println(ad.toString());
-
                 if (ad.getPrograma().getModulo().getId().equals(m.getId())){
                     DefaultMenuItem item = new DefaultMenuItem(ad.getPrograma().getNombre());
                     item.setUrl(ad.getPrograma().getPagina());

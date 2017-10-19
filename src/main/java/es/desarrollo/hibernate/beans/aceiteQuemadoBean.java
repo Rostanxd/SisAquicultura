@@ -22,7 +22,7 @@ public class aceiteQuemadoBean {
 
     private aceiteQuemado aq = new aceiteQuemado();
 
-    private aceiteQuemado aqUpd = new aceiteQuemado();
+    private aceiteQuemado aqUpd = new aceiteQuemado("E");
 
     private List<aceiteQuemado> listAq = new ArrayList<>();
 
@@ -98,16 +98,14 @@ public class aceiteQuemadoBean {
             case "Ingresar":
                 if (!this.validaMesEmpresa()){
                     this.ingresarRegistro();
-                    this.limpiar();
                     FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "Listo!", "Registro ingresado con éxito."));
-//                    RequestContext.getCurrentInstance().execute("dialogWidgetVar.hide()");
                 }else{
-                    FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "Error", "Mes ya registrado."));
+                    FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "Error", "Mes ya registrado."));
                 }
                 break;
-            case "Actualizar":
+            case "Revisar":
                 this.actualizarRegistro();
-                this.limpiar();
+                FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "Listo!", "Registro actualizado exitosamente!."));
                 break;
         }
     }
@@ -116,6 +114,7 @@ public class aceiteQuemadoBean {
         this.setMes("");
         this.setEstado("Pendiente");
 
+        this.aqUpd.setEstado("E");
         this.aqUpd.setEmp_ruc("");
         this.aqUpd.setFichaDescripcion("");
         this.aqUpd.setFichaObservacion("");
@@ -124,6 +123,7 @@ public class aceiteQuemadoBean {
 
     private void actualizarRegistro() {
         aceiteQuemadoDAO aqDAO = new aceiteQuemadoDAO();
+        aqUpd.setEstado("R");
         aqDAO.actualizar(aqUpd, this.usuario.getId());
 
         this.listAq.clear();
@@ -142,14 +142,54 @@ public class aceiteQuemadoBean {
                 this.aqUpd.setEstado(key);
             }
         }
-
-        System.out.println(this.aqUpd.toString());
-
         aceiteQuemadoDAO aceiteQuemadoDAO = new aceiteQuemadoDAO();
         aceiteQuemadoDAO.registrar(aqUpd, this.usuario.getId());
 
         this.listAq.clear();
         this.listarAceiteQuemedo();
+    }
+
+    public String setDialogAccion(String accion){
+        switch (accion){
+            case "INS":
+                this.setBtnAccion("Ingresar");
+                break;
+            case "UPD":
+                if (this.usuario.getAcceso().getId().equals("02")){
+                    this.setBtnAccion("Revisar");
+                }else{
+                    this.setBtnAccion("Ver");
+                }
+                break;
+        }
+        return btnAccion;
+    }
+
+    public String setAdminAccion(){
+        String accion = "";
+        if (this.usuario.getAcceso().getId().equals("02")){
+            accion = "Revisar";
+        }else{
+            accion = "Ver";
+        }
+        return accion;
+    }
+
+    public boolean setDisabledBtnAccion() {
+        boolean estado;
+        estado = this.btnAccion.equals("Ingresar") && this.usuario.getAcceso().getId().equals("01") ||
+                this.btnAccion.equals("Revisar") && this.usuario.getAcceso().getId().equals("02");
+        return !estado;
+    }
+
+    public boolean setDiabledElemento(String elemento){
+        boolean disabled = true;
+        if (this.usuario.getAcceso().getId().equals("01") && elemento.equals("descripcion") && aqUpd.getEstado().equals("E")){
+            disabled = false;
+        }else if (this.usuario.getAcceso().getId().equals("02") && elemento.equals("observacion") && aqUpd.getEstado().equals("A")){
+            disabled = false;
+        }
+        return disabled;
     }
 
     //    GETTER Y SETTERS
@@ -187,7 +227,13 @@ public class aceiteQuemadoBean {
             case "Ingresar":
                 this.limpiar();
                 break;
-            case "Actualizar":
+            case "Revisar":
+                this.aqUpd = this.aq;
+                this.aqUpd.setEmpresa(this.aq.getEmpresa());
+                this.mes = Utils.mesString(this.aq.getAcq_mes());
+                this.estado= Utils.estadoString(this.aq.getEstado());
+                break;
+            case "Ver":
                 this.aqUpd = this.aq;
                 this.mes = Utils.mesString(this.aq.getAcq_mes());
                 this.estado= Utils.estadoString(this.aq.getEstado());

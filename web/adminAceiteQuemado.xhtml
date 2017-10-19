@@ -14,7 +14,7 @@
         <ui:define name="content">
             <h:form id="form">
                 <p:dataTable id="dataAceiteQuemado" var="aceite" value="#{aceiteQuemadoBean.listAq}"
-                             selectionMode="single" selection="#{aceiteQuemadoBean.aq}" rowKey="#{aceite.emp_ruc}_#{aceite.acq_mes}"
+                             selectionMode="single" selection="#{aceiteQuemadoBean.aq}" rowKey="#{aceite.empresa.ruc}_#{aceite.acq_mes}"
                              style="font-size: smaller; width: auto;" emptyMessage="No hay datos." scrollable="true" scrollHeight="500px">
                     <f:facet name="header"  >
                         Aceite Quemado
@@ -26,16 +26,20 @@
                         <p:outputLabel value="#{aceite.mesString()}"/>
                     </p:column>
                     <p:column headerText="Fec. Ingreso" style="width: 150px">
-                        <p:outputLabel value="#{aceite.fechaIngreso}"/>
+                        <p:outputLabel value="#{aceite.fechaIngresoFormatted()}"/>
                     </p:column>
                     <p:column headerText="Estado" style="width: 150px">
                         <p:outputLabel value="#{aceite.estadoString()}"/>
                     </p:column>
+                    <p:column headerText="Descripcion" style="width: 300px">
+                        <p:outputLabel value="#{aceite.fichaDescripcion}"/>
+                    </p:column>
                     <f:facet name="footer">
-                        <p:commandButton value="Ingresar" id="ingresar" actionListener="#{aceiteQuemadoBean.setBtnAccion('Ingresar')}"
+                        <p:commandButton value="Ingresar" id="ingresar" actionListener="#{aceiteQuemadoBean.setDialogAccion('INS')}"
                                          icon="ui-icon-disk" oncomplete="PF('wdgAceite').show();"
                                          update=":dlgAceite" disabled="#{aceiteQuemadoBean.usuario.getAcceso().id ne '01'}"/>
-                        <p:commandButton value="Modificar" id="modificar" actionListener="#{aceiteQuemadoBean.setBtnAccion('Actualizar')}" icon="ui-icon-disk" oncomplete="PF('wdgAceite').show();" update=":dlgAceite" />
+                        <p:commandButton value="#{aceiteQuemadoBean.setAdminAccion()}" id="modificar" actionListener="#{aceiteQuemadoBean.setDialogAccion('UPD')}" icon="ui-icon-disk"
+                                         oncomplete="PF('wdgAceite').show();" update=":dlgAceite" />
                     </f:facet>
                 </p:dataTable>
             </h:form>
@@ -53,7 +57,7 @@
                                 <p:selectOneMenu id="empresa" value="#{aceiteQuemadoBean.aqUpd.empresa}"
                                                  converter="omnifaces.SelectItemsConverter"
                                                  required="true" requiredMessage="Seleccione una empresa!"
-                                                 disabled="#{aceiteQuemadoBean.btnAccion eq 'Actualizar'}">
+                                                 disabled="#{aceiteQuemadoBean.aqUpd.estado ne 'E'}">
                                     <f:selectItem itemLabel="Seleccione..." itemValue="#{null}" />
                                     <f:selectItems value="#{aceiteQuemadoBean.listEmpresas}" var="empresa"
                                                    itemLabel="#{empresa.nombre}" itemValue="#{empresa}"/>
@@ -64,7 +68,7 @@
                             </p:column>
                             <p:column>
                                 <p:selectOneMenu id="mes" value="#{aceiteQuemadoBean.mes}"
-                                                 disabled="#{aceiteQuemadoBean.btnAccion eq 'Actualizar'}"
+                                                 disabled="#{aceiteQuemadoBean.aqUpd.estado ne 'E'}"
                                                  required="true" requiredMessage="Seleccione una mes!">
                                     <f:selectItem itemLabel="Seleccione..." itemValue="#{null}" noSelectionOption="true"/>
                                     <f:selectItems value="#{aceiteQuemadoBean.listMeses}"
@@ -77,7 +81,8 @@
                                 <p:outputLabel value="Fecha Ingreso" style="font-weight: bold;"/>
                             </p:column>
                             <p:column>
-                                <p:calendar id="inline" value="#{aceiteQuemadoBean.aqUpd.fechaIngreso}"/>
+                                <p:calendar id="inline" value="#{aceiteQuemadoBean.aqUpd.fechaIngreso}"  pattern="dd/MM/yyyy"
+                                            disabled="#{aceiteQuemadoBean.aqUpd.estado ne 'E'}"/>
                             </p:column>
                             <p:column>
                                 <p:outputLabel value="Estado" style="font-weight: bold;"/>
@@ -95,7 +100,8 @@
                                 <p:outputLabel value="Descripción" style="font-weight: bold;"/>
                             </p:column>
                             <p:column colspan="3">
-                                <p:inputTextarea rows="6" cols="50" value="#{aceiteQuemadoBean.aqUpd.fichaDescripcion}"/>
+                                <p:inputTextarea rows="6" cols="50" value="#{aceiteQuemadoBean.aqUpd.fichaDescripcion}"
+                                                 disabled="#{aceiteQuemadoBean.setDiabledElemento('descripcion')}"/>
                             </p:column>
                         </p:row>
                         <p:row>
@@ -103,12 +109,14 @@
                                 <p:outputLabel value="Observación" style="font-weight: bold;"/>
                             </p:column>
                             <p:column colspan="3">
-                                <p:inputTextarea rows="6" cols="50" value="#{aceiteQuemadoBean.aqUpd.fichaObservacion}" disabled="true"/>
+                                <p:inputTextarea rows="6" cols="50" value="#{aceiteQuemadoBean.aqUpd.fichaObservacion}"
+                                                 disabled="#{aceiteQuemadoBean.setDiabledElemento('observacion')}"/>
                             </p:column>
                         </p:row>
                     </p:panelGrid>
-                    <p:commandButton value="#{aceiteQuemadoBean.btnAccion}" action="#{aceiteQuemadoBean.operar()}" update=":dialogForm, :form"/>
-                    <p:commandButton value="Cancel" oncomplete="PF('wdgAceite').hide()" immediate="true"/>
+                    <p:commandButton value="#{aceiteQuemadoBean.btnAccion}" action="#{aceiteQuemadoBean.operar()}"
+                                     update=":dialogForm, :form" disabled="#{aceiteQuemadoBean.setDisabledBtnAccion()}"/>
+                    <p:commandButton value="Cerrar" oncomplete="PF('wdgAceite').hide()" immediate="true"/>
                 </h:form>
             </p:dialog>
         </ui:define>

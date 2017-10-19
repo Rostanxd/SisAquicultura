@@ -98,4 +98,30 @@ public class empresa {
     public void setFechaModificacion(Date fechaModificacion) {
         this.fechaModificacion = fechaModificacion;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof empresa)) return false;
+
+        empresa empresa = (empresa) o;
+
+        if (!getRuc().equals(empresa.getRuc())) return false;
+        if (!getNombre().equals(empresa.getNombre())) return false;
+        if (!getUsuarioCreacion().equals(empresa.getUsuarioCreacion())) return false;
+        if (!getFechaCreacion().equals(empresa.getFechaCreacion())) return false;
+        if (!getUsuarioModificacion().equals(empresa.getUsuarioModificacion())) return false;
+        return getFechaModificacion().equals(empresa.getFechaModificacion());
+    }
+
+    @Override
+    public int hashCode() {
+        int result = getRuc().hashCode();
+        result = 31 * result + getNombre().hashCode();
+        result = 31 * result + getUsuarioCreacion().hashCode();
+        result = 31 * result + getFechaCreacion().hashCode();
+        result = 31 * result + getUsuarioModificacion().hashCode();
+        result = 31 * result + getFechaModificacion().hashCode();
+        return result;
+    }
 }

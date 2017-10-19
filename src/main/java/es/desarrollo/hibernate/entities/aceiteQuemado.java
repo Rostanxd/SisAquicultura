@@ -39,7 +39,11 @@ public class aceiteQuemado {
     public aceiteQuemado() {
     }
 
-//    METODOS
+    public aceiteQuemado(String estado) {
+        this.estado = estado;
+    }
+
+    //    METODOS
     @Override
     public String toString() {
         return "aceiteQuemado{" +
@@ -51,6 +55,10 @@ public class aceiteQuemado {
                 ", fichaObservacion='" + fichaObservacion + '\'' +
                 ", empresa=" + empresa +
                 '}';
+    }
+
+    public String fechaIngresoFormatted(){
+        return Utils.dateFormat(this.fechaIngreso);
     }
 
     //    GETTER Y SETTER
@@ -116,5 +124,33 @@ public class aceiteQuemado {
 
     public String estadoString(){
         return Utils.estadoString(this.estado);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof aceiteQuemado)) return false;
+
+        aceiteQuemado that = (aceiteQuemado) o;
+
+        if (!getEmp_ruc().equals(that.getEmp_ruc())) return false;
+        if (!getAcq_mes().equals(that.getAcq_mes())) return false;
+        if (!getFechaIngreso().equals(that.getFechaIngreso())) return false;
+        if (!getEstado().equals(that.getEstado())) return false;
+        if (!getFichaDescripcion().equals(that.getFichaDescripcion())) return false;
+        if (!getFichaObservacion().equals(that.getFichaObservacion())) return false;
+        return getEmpresa().equals(that.getEmpresa());
+    }
+
+    @Override
+    public int hashCode() {
+        int result = getEmp_ruc().hashCode();
+        result = 31 * result + getAcq_mes().hashCode();
+        result = 31 * result + getFechaIngreso().hashCode();
+        result = 31 * result + getEstado().hashCode();
+        result = 31 * result + getFichaDescripcion().hashCode();
+        result = 31 * result + getFichaObservacion().hashCode();
+        result = 31 * result + getEmpresa().hashCode();
+        return result;
     }
 }

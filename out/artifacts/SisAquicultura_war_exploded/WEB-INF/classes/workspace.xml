@@ -6,7 +6,11 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6276b5ab-4ad1-4b3a-ae2f-60ecdadef8b2" name="Default" comment="" />
+    <list default="true" id="6276b5ab-4ad1-4b3a-ae2f-60ecdadef8b2" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SisAquicultura_war_exploded/WEB-INF/classes/es/desarrollo/servicio/Utils.class" afterPath="$PROJECT_DIR$/out/artifacts/SisAquicultura_war_exploded/WEB-INF/classes/es/desarrollo/servicio/Utils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SisAquicultura_war_exploded/adminAceiteQuemado.xhtml" afterPath="$PROJECT_DIR$/out/artifacts/SisAquicultura_war_exploded/adminAceiteQuemado.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/beans/aceiteQuemadoBean.java" afterPath="$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/beans/aceiteQuemadoBean.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,116 +40,72 @@
         <item name="dbaquicultura@localhost" type="e3449647:DbNodeDescriptor" />
         <item name="dbaquicultura" type="e3449647:DbNodeDescriptor" />
       </path>
+      <path>
+        <item name="" type="eadb38e5:DatabaseStructure$Root" />
+        <item name="dbaquicultura@localhost" type="e3449647:DbNodeDescriptor" />
+        <item name="dbaquicultura" type="e3449647:DbNodeDescriptor" />
+        <item name="acu_aceite_quemado" type="e3449647:DbNodeDescriptor" />
+      </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.54744136">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="adminAceiteQuemado.xhtml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/web/adminAceiteQuemado.xhtml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="640">
-                  <caret line="64" column="106" lean-forward="false" selection-start-line="64" selection-start-column="106" selection-end-line="64" selection-end-column="106" />
-                  <folding>
-                    <element signature="n#h:form#0;n#ui:define#0;n#ui:composition#0;n#h:body#0;n#html#0;n#!!top" expanded="false" />
-                    <element signature="n#p:selectOneMenu#0;n#p:column#1;n#p:row#0;n#p:panelGrid#0;n#h:form#0;n#p:dialog#0;n#ui:define#0;n#ui:composition#0;n#h:body#0;n#html#0;n#!!top" expanded="false" />
-                    <element signature="n#p:row#2;n#p:panelGrid#0;n#h:form#0;n#p:dialog#0;n#ui:define#0;n#ui:composition#0;n#h:body#0;n#html#0;n#!!top" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="aceiteQuemadoBean.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/beans/aceiteQuemadoBean.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2100">
-                  <caret line="116" column="29" lean-forward="false" selection-start-line="116" selection-start-column="29" selection-end-line="116" selection-end-column="29" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="aceiteQuemadoDAO.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/dao/aceiteQuemadoDAO.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="335">
-                  <caret line="26" column="30" lean-forward="false" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="adminAccesos.xhtml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/web/adminAccesos.xhtml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="880">
-                  <caret line="44" column="106" lean-forward="false" selection-start-line="44" selection-start-column="106" selection-end-line="44" selection-end-column="106" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="adminUsuarios.xhtml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/web/adminUsuarios.xhtml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="580">
-                  <caret line="77" column="152" lean-forward="false" selection-start-line="77" selection-start-column="110" selection-end-line="77" selection-end-column="152" />
-                  <folding>
-                    <element signature="n#p:dataTable#0;n#h:form#0;n#ui:define#0;n#ui:composition#0;n#h:body#0;n#html#0;n#!!top" expanded="false" />
-                    <element signature="n#p:row#0;n#p:panelGrid#0;n#h:form#0;n#p:dialog#0;n#ui:define#0;n#ui:composition#0;n#h:body#0;n#html#0;n#!!top" expanded="false" />
-                    <element signature="n#p:row#1;n#p:panelGrid#0;n#h:form#0;n#p:dialog#0;n#ui:define#0;n#ui:composition#0;n#h:body#0;n#html#0;n#!!top" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="accesosBean.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/beans/accesosBean.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="260">
-                  <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-                  <folding>
-                    <element signature="method#setAccesoSelected#0;class#accesosBean#0" expanded="false" />
-                    <element signature="method#setListAccesos#0;class#accesosBean#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="accesoDAO.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/dao/accesoDAO.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="740">
-                  <caret line="50" column="13" lean-forward="true" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
-                  <folding>
-                    <element signature="method#actualizar#0;class#accesoDAO#0" expanded="false" />
-                    <element signature="method#listar#0;class#accesoDAO#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="aceiteQuemado.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/entities/aceiteQuemado.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="360">
-                  <caret line="19" column="30" lean-forward="false" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
-                  <folding>
-                    <element signature="method#aceiteQuemado#0;class#aceiteQuemado#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="adminAceiteQuemado.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/adminAceiteQuemado.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="940">
+              <caret line="109" column="107" lean-forward="false" selection-start-line="109" selection-start-column="107" selection-end-line="109" selection-end-column="107" />
+              <folding>
+                <element signature="n#p:panelGrid#0;n#h:form#0;n#p:dialog#0;n#ui:define#0;n#ui:composition#0;n#h:body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#p:selectOneMenu#0;n#p:column#1;n#p:row#0;n#p:panelGrid#0;n#h:form#0;n#p:dialog#0;n#ui:define#0;n#ui:composition#0;n#h:body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="aceiteQuemadoBean.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/beans/aceiteQuemadoBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="104" column="115" lean-forward="false" selection-start-line="104" selection-start-column="115" selection-end-line="104" selection-end-column="115" />
+              <folding>
+                <element signature="method#listarAceiteQuemedo#0;class#aceiteQuemadoBean#0" expanded="false" />
+                <element signature="method#empresasUsuario#0;class#aceiteQuemadoBean#0" expanded="false" />
+                <element signature="method#cargarMeses#0;class#aceiteQuemadoBean#0" expanded="false" />
+                <element signature="method#cargarEstados#0;class#aceiteQuemadoBean#0" expanded="false" />
+                <element signature="method#limpiar#0;class#aceiteQuemadoBean#0" expanded="false" />
+                <element signature="method#actualizarRegistro#0;class#aceiteQuemadoBean#0" expanded="false" />
+                <element signature="method#setBtnAccion#0;class#aceiteQuemadoBean#0" expanded="false" />
+                <marker date="1508424729157" expanded="true" signature="3333:3403" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="aceiteQuemadoDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/dao/aceiteQuemadoDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="640">
+              <caret line="67" column="5" lean-forward="true" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
+              <folding>
+                <element signature="method#registrar#0;class#aceiteQuemadoDAO#0" expanded="false" />
+                <element signature="method#listar#0;class#aceiteQuemadoDAO#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sis_programas" pinned="false" current-in-tab="false">
+        <entry file="das://table:/dd3b12aa/864a8c12-aa90-4f87-a5d4-f26db8cfa9d3/dbaquicultura.sis_programas">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -179,7 +139,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java.es.desarrollo/servicio/Utils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/es/desarrollo/servicio/Utils.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/entities/usuarios.java" />
         <option value="$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/beans/tjrtyj.java" />
@@ -211,7 +170,6 @@
         <option value="$PROJECT_DIR$/web/adminModulos.xhtml" />
         <option value="$PROJECT_DIR$/web/adminUsuarios.xhtml" />
         <option value="$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/entities/aceiteQuemadoPK.java" />
-        <option value="$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/entities/aceiteQuemado.java" />
         <option value="$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/idao/IAceiteQuemadoDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/entities/empresaUsuarioPK.java" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
@@ -224,9 +182,11 @@
         <option value="$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/beans/empresaBean.java" />
         <option value="$PROJECT_DIR$/web/adminEmpresas.xhtml" />
         <option value="$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/dao/usuarioDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/beans/aceiteQuemadoBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/dao/aceiteQuemadoDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/entities/aceiteQuemado.java" />
+        <option value="$PROJECT_DIR$/src/main/java/es/desarrollo/servicio/Utils.java" />
         <option value="$PROJECT_DIR$/web/adminAceiteQuemado.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/dao/aceiteQuemadoDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/beans/aceiteQuemadoBean.java" />
       </list>
     </option>
   </component>
@@ -263,7 +223,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -304,47 +265,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="desarrollo" type="462c0819:PsiDirectoryNode" />
-              <item name="hibernate" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SisAquicultura" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SisAquicultura_0730" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="desarrollo" type="462c0819:PsiDirectoryNode" />
-              <item name="hibernate" type="462c0819:PsiDirectoryNode" />
-              <item name="beans" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SisAquicultura" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SisAquicultura_0730" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="desarrollo" type="462c0819:PsiDirectoryNode" />
-              <item name="hibernate" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SisAquicultura" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SisAquicultura_0730" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="desarrollo" type="462c0819:PsiDirectoryNode" />
-              <item name="hibernate" type="462c0819:PsiDirectoryNode" />
-              <item name="entities" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SisAquicultura" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SisAquicultura_0730" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="desarrollo" type="462c0819:PsiDirectoryNode" />
-              <item name="hibernate" type="462c0819:PsiDirectoryNode" />
-              <item name="idao" type="462c0819:PsiDirectoryNode" />
+              <item name="servicio" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SisAquicultura" type="b2602c69:ProjectViewProjectNode" />
@@ -370,9 +291,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1002,7 +922,8 @@
       <workItem from="1507903953259" duration="18041000" />
       <workItem from="1508164854935" duration="17308000" />
       <workItem from="1508250991299" duration="17285000" />
-      <workItem from="1508343382810" duration="25000" />
+      <workItem from="1508343382810" duration="18026000" />
+      <workItem from="1508423539004" duration="745000" />
     </task>
     <task id="LOCAL-00001" summary="Commit #4 - Java EE y Clase Utils.">
       <created>1502844849581</created>
@@ -1053,11 +974,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508283138065</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Commit #12&#10;- Ingreso de Aceite Quemado y validación de registros.">
+      <created>1508367824076</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1508367824077</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96803000" />
+    <option name="totallyTimeSpent" value="115549000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -1070,19 +998,20 @@
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12793177" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12793177" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17430703" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35096642" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43540183" sideWeight="0.49573562" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41709054" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44150558" sideWeight="0.49573562" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41709054" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14818764" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17697228" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1095,7 +1024,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35096642" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960325" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46897253" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1133,11 +1061,12 @@
     <MESSAGE value="Commit #8&#10;- Se genera web session para el usuario.&#10;- Carga de menu en base a los accesos del usuario (en desarrollo)." />
     <MESSAGE value="Commit #10&#10;- Accesos validados por tipo de usuario completado&#10;- Entidades de empresa, usuarios por empresa, y aceite quemado.&#10;- CRUD de accesos, usuarios y modulos listos." />
     <MESSAGE value="Commit #11&#10;- CRUD de Aceite Quemado&#10;- Entitdades de Empresa, Usuario y la relacion en tre ellas.&#10;- Administradores" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit #11&#10;- CRUD de Aceite Quemado&#10;- Entitdades de Empresa, Usuario y la relacion en tre ellas.&#10;- Administradores" />
+    <MESSAGE value="Commit #12&#10;- Ingreso de Aceite Quemado y validación de registros." />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit #12&#10;- Ingreso de Aceite Quemado y validación de registros." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="8" />
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1146,13 +1075,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_40/jre/lib/rt.jar!/java/lang/reflect/Field.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="101" column="20" lean-forward="false" selection-start-line="101" selection-start-column="20" selection-end-line="101" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/entities/reporteAceite.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/primefaces/primefaces/5.2/primefaces-5.2.jar!/org/primefaces/context/RequestContext.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -1196,13 +1118,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/dao/moduloDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="33" column="19" lean-forward="false" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/entities/programa.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="533">
@@ -1228,13 +1143,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="640">
           <caret line="34" column="5" lean-forward="false" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/dd3b12aa/864a8c12-aa90-4f87-a5d4-f26db8cfa9d3/dbaquicultura.acu_aceite_quemado">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1266,18 +1174,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="62" lean-forward="false" selection-start-line="11" selection-start-column="62" selection-end-line="11" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/entities/usuario.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="40" column="45" lean-forward="false" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
+          <folding>
+            <element signature="method#toString#0;class#usuario#0" expanded="false" />
+            <element signature="method#estadoText#0;class#usuario#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1351,13 +1255,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/dd3b12aa/864a8c12-aa90-4f87-a5d4-f26db8cfa9d3/dbaquicultura.sis_programas">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/adminModulos.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="341">
@@ -1383,13 +1280,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="20" column="73" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/beans/loginBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="40" column="9" lean-forward="true" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -1444,19 +1334,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/adminAccesos.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="880">
+        <state relative-caret-position="0">
           <caret line="44" column="106" lean-forward="false" selection-start-line="44" selection-start-column="106" selection-end-line="44" selection-end-column="106" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/entities/aceiteQuemado.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="19" column="30" lean-forward="false" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
-          <folding>
-            <element signature="method#aceiteQuemado#0;class#aceiteQuemado#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1464,11 +1343,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="580">
           <caret line="77" column="152" lean-forward="false" selection-start-line="77" selection-start-column="110" selection-end-line="77" selection-end-column="152" />
-          <folding>
-            <element signature="n#p:dataTable#0;n#h:form#0;n#ui:define#0;n#ui:composition#0;n#h:body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#p:row#0;n#p:panelGrid#0;n#h:form#0;n#p:dialog#0;n#ui:define#0;n#ui:composition#0;n#h:body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#p:row#1;n#p:panelGrid#0;n#h:form#0;n#p:dialog#0;n#ui:define#0;n#ui:composition#0;n#h:body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="69" lean-forward="true" selection-start-line="12" selection-start-column="69" selection-end-line="12" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/dao/moduloDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="33" column="19" lean-forward="false" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -1476,49 +1365,96 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/dd3b12aa/864a8c12-aa90-4f87-a5d4-f26db8cfa9d3/dbaquicultura.acu_aceite_quemado">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/entities/aceiteQuemado.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="715">
+          <caret line="115" column="0" lean-forward="true" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
           <folding>
-            <element signature="method#setAccesoSelected#0;class#accesosBean#0" expanded="false" />
-            <element signature="method#setListAccesos#0;class#accesosBean#0" expanded="false" />
+            <element signature="method#aceiteQuemado#0;class#aceiteQuemado#0" expanded="false" />
+            <element signature="method#toString#0;class#aceiteQuemado#0" expanded="false" />
+            <element signature="e#2669#2670#0" expanded="true" />
+            <element signature="e#2721#2722#0" expanded="true" />
+            <element signature="e#2756#2757#0" expanded="true" />
+            <element signature="e#2810#2811#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/servicio/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="110" column="5" lean-forward="true" selection-start-line="110" selection-start-column="5" selection-end-line="110" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/dao/accesoDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="740">
-          <caret line="50" column="13" lean-forward="true" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
-          <folding>
-            <element signature="method#actualizar#0;class#accesoDAO#0" expanded="false" />
-            <element signature="method#listar#0;class#accesoDAO#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="355">
+          <caret line="60" column="60" lean-forward="true" selection-start-line="60" selection-start-column="60" selection-end-line="60" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/beans/loginBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="27" column="20" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/adminAceiteQuemado.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="64" column="106" lean-forward="false" selection-start-line="64" selection-start-column="106" selection-end-line="64" selection-end-column="106" />
+        <state relative-caret-position="940">
+          <caret line="109" column="107" lean-forward="false" selection-start-line="109" selection-start-column="107" selection-end-line="109" selection-end-column="107" />
           <folding>
-            <element signature="n#h:form#0;n#ui:define#0;n#ui:composition#0;n#h:body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#p:panelGrid#0;n#h:form#0;n#p:dialog#0;n#ui:define#0;n#ui:composition#0;n#h:body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#p:selectOneMenu#0;n#p:column#1;n#p:row#0;n#p:panelGrid#0;n#h:form#0;n#p:dialog#0;n#ui:define#0;n#ui:composition#0;n#h:body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#p:row#2;n#p:panelGrid#0;n#h:form#0;n#p:dialog#0;n#ui:define#0;n#ui:composition#0;n#h:body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/dd3b12aa/864a8c12-aa90-4f87-a5d4-f26db8cfa9d3/dbaquicultura.sis_programas">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/dao/aceiteQuemadoDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="67" column="5" lean-forward="true" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
+          <folding>
+            <element signature="method#registrar#0;class#aceiteQuemadoDAO#0" expanded="false" />
+            <element signature="method#listar#0;class#aceiteQuemadoDAO#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/beans/aceiteQuemadoBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2100">
-          <caret line="116" column="29" lean-forward="false" selection-start-line="116" selection-start-column="29" selection-end-line="116" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/es/desarrollo/hibernate/dao/aceiteQuemadoDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="26" column="30" lean-forward="false" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
-          <folding />
+        <state relative-caret-position="300">
+          <caret line="104" column="115" lean-forward="false" selection-start-line="104" selection-start-column="115" selection-end-line="104" selection-end-column="115" />
+          <folding>
+            <element signature="method#listarAceiteQuemedo#0;class#aceiteQuemadoBean#0" expanded="false" />
+            <element signature="method#empresasUsuario#0;class#aceiteQuemadoBean#0" expanded="false" />
+            <element signature="method#cargarMeses#0;class#aceiteQuemadoBean#0" expanded="false" />
+            <element signature="method#cargarEstados#0;class#aceiteQuemadoBean#0" expanded="false" />
+            <element signature="method#limpiar#0;class#aceiteQuemadoBean#0" expanded="false" />
+            <element signature="method#actualizarRegistro#0;class#aceiteQuemadoBean#0" expanded="false" />
+            <element signature="method#setBtnAccion#0;class#aceiteQuemadoBean#0" expanded="false" />
+            <marker date="1508424729157" expanded="true" signature="3333:3403" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,5 +1,8 @@
 package es.desarrollo.servicio;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /**
  * Created by Rostan on 15/08/2017.
  */
@@ -124,5 +127,11 @@ public class Utils {
                 break;
         }
         return estadoString;
+    }
+
+    public static String dateFormat(Date date){
+        String newstring = new SimpleDateFormat("yyyy-MM-dd").format(date);
+        return newstring;
+
     }
 }

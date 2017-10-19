@@ -14,7 +14,6 @@ public class aceiteQuemadoDAO implements IAceiteQuemadoDAO{
     private EntityManagerFactory emf = Persistence.createEntityManagerFactory("Persistencia");
 
     public boolean validaMesEmpresa(empresa empresa, Integer mes){
-        System.out.println(empresa.toString() + " mes: " + mes);
         boolean existe = false;
         EntityManager em = emf.createEntityManager();
         Query qry = em.createQuery("SELECT count(a) " +
@@ -32,9 +31,11 @@ public class aceiteQuemadoDAO implements IAceiteQuemadoDAO{
 //    CRUD
     @Override
     public boolean registrar(aceiteQuemado aceiteQuemado, String usuario) {
+        boolean registrado = false;
         aceiteQuemado aqUpd = aceiteQuemado;
         aqUpd.setEmp_ruc(aceiteQuemado.getEmpresa().getRuc());
-        boolean registrado = false;
+        aqUpd.setEstado("A");
+
         EntityManager em = emf.createEntityManager();
         try {
             em.getTransaction().begin();
@@ -52,7 +53,30 @@ public class aceiteQuemadoDAO implements IAceiteQuemadoDAO{
 
     @Override
     public boolean actualizar(aceiteQuemado aceiteQuemado, String usuario) {
-        return false;
+        boolean actualizado = false;
+        EntityManager em = emf.createEntityManager();
+        Query qry = em.createQuery("SELECT a FROM  aceiteQuemado AS a " +
+                "WHERE a.emp_ruc =:ruc AND a.acq_mes =:mes");
+        qry.setParameter("ruc", aceiteQuemado.getEmpresa().getRuc());
+        qry.setParameter("mes", aceiteQuemado.getAcq_mes());
+        aceiteQuemado aqUpd = (aceiteQuemado) qry.getSingleResult();
+
+        aqUpd.setEstado(aceiteQuemado.getEstado());
+        aqUpd.setFichaObservacion(aceiteQuemado.getFichaObservacion());
+        aqUpd.setFichaDescripcion(aceiteQuemado.getFichaDescripcion());
+        try{
+            em.getTransaction().begin();
+            em.persist(aqUpd);
+            em.getTransaction().commit();
+            actualizado = true;
+        }catch (Exception e){
+            em.getTransaction().rollback();
+            e.getStackTrace();
+            actualizado = false;
+        }finally{
+            em.close();
+        }
+        return actualizado;
     }
 
     @Override
