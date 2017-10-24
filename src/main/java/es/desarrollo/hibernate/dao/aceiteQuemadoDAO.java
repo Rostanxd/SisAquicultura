@@ -3,6 +3,7 @@ package es.desarrollo.hibernate.dao;
 import es.desarrollo.hibernate.entities.acceso;
 import es.desarrollo.hibernate.entities.aceiteQuemado;
 import es.desarrollo.hibernate.entities.empresa;
+import es.desarrollo.hibernate.entities.usuario;
 import es.desarrollo.hibernate.idao.IAceiteQuemadoDAO;
 
 import javax.persistence.*;
@@ -85,9 +86,16 @@ public class aceiteQuemadoDAO implements IAceiteQuemadoDAO{
     }
 
     @Override
-    public List<aceiteQuemado> listar() {
+    public List<aceiteQuemado> listar(usuario usuario) {
         EntityManager em = emf.createEntityManager();
-        Query qry = em.createQuery("SELECT a FROM aceiteQuemado AS a");
+        Query qry;
+        if (usuario.getAcceso().getId().equals("01")){
+            qry = em.createQuery("SELECT a FROM aceiteQuemado AS a " +
+                    "INNER JOIN empresaUsuario AS eu " +
+                    "   ON(a.emp_ruc = eu.emp_ruc)");
+        }else{
+            qry = em.createQuery("SELECT a FROM aceiteQuemado AS a");
+        }
         return (List<aceiteQuemado>) qry.getResultList();
     }
 

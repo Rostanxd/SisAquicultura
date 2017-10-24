@@ -1,12 +1,17 @@
 package es.desarrollo.hibernate.beans;
 
+import es.desarrollo.excels.generaExcelAceiteQuemado;
 import es.desarrollo.hibernate.dao.aceiteQuemadoDAO;
 import es.desarrollo.hibernate.dao.usuarioDAO;
 import es.desarrollo.hibernate.entities.aceiteQuemado;
 import es.desarrollo.hibernate.entities.empresa;
 import es.desarrollo.hibernate.entities.usuario;
 import es.desarrollo.servicio.Utils;
-import org.primefaces.context.RequestContext;
+import org.apache.poi.hssf.usermodel.HSSFCellStyle;
+import org.apache.poi.hssf.usermodel.HSSFRow;
+import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.hssf.util.HSSFColor;
 
 import javax.annotation.PostConstruct;
 import javax.faces.application.FacesMessage;
@@ -63,7 +68,7 @@ public class aceiteQuemadoBean {
 
     private void listarAceiteQuemedo(){
         aceiteQuemadoDAO aqd = new aceiteQuemadoDAO();
-        this.listAq = aqd.listar();
+        this.listAq = aqd.listar(this.usuario);
     }
 
     public void operar(){
@@ -163,6 +168,22 @@ public class aceiteQuemadoBean {
             disabled = false;
         }
         return disabled;
+    }
+
+    public void postProcessXLS(Object document) {
+        HSSFWorkbook wb = (HSSFWorkbook) document;
+        HSSFSheet sheet = wb.getSheetAt(0);
+        HSSFRow header = sheet.getRow(0);
+        HSSFCellStyle cellStyle = wb.createCellStyle();
+        cellStyle.setFillForegroundColor(HSSFColor.GREEN.index);
+        cellStyle.setFillPattern(HSSFCellStyle.SOLID_FOREGROUND);
+        for(int i=0; i < header.getPhysicalNumberOfCells();i++) {
+            header.getCell(i).setCellStyle(cellStyle);
+        }
+    }
+
+    public void generarExcel(){
+        generaExcelAceiteQuemado.generaExcel(this.aqUpd);
     }
 
     //    GETTER Y SETTERS

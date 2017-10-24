@@ -50,6 +50,12 @@
                                          icon="ui-icon-disk"
                                          oncomplete="PF('wdgAliPiscina').show();"
                                          update=":dlgAliPiscina" />
+                        <div style="float:right">
+                            <h:commandLink>
+                                <p:graphicImage url="resources/images/excel.png" width="24"/>
+                                <p:dataExporter type="xls" target="dataAlimentoPiscina" fileName="ListadoAlimentoPiscina" postProcessor="#{controlAlimentoPiscinaBean.postProcessXLS}"/>
+                            </h:commandLink>
+                        </div>
                     </f:facet>
                 </p:dataTable>
             </h:form>
@@ -268,11 +274,24 @@
                             </p:column>
                         </p:row>
                     </p:panelGrid>
-                    <p:commandButton value="#{controlAlimentoPiscinaBean.btnAccion}"
-                                     action="#{controlAlimentoPiscinaBean.operar()}"
-                                     update=":dialogForm, :form"
-                                     disabled="#{controlAlimentoPiscinaBean.setDisabledBtnAccion()}"/>
-                    <p:commandButton value="Cerrar" oncomplete="PF('wdgAliPiscina').hide()" immediate="true"/>
+                    <table>
+                        <tr>
+                            <td>
+                                <p:commandButton value="#{controlAlimentoPiscinaBean.btnAccion}"
+                                                 action="#{controlAlimentoPiscinaBean.operar()}"
+                                                 update=":dialogForm, :form"
+                                                 disabled="#{controlAlimentoPiscinaBean.setDisabledBtnAccion()}"/>
+                            </td>
+                            <td>
+                                <p:commandButton value="Cerrar" oncomplete="PF('wdgAliPiscina').hide()" immediate="true"/>
+                            </td>
+                            <td>
+                                <h:commandLink action="#{controlAlimentoPiscinaBean.generarExcel()}">
+                                    <p:graphicImage url="resources/images/excel.png" width="24"/>
+                                </h:commandLink>
+                            </td>
+                        </tr>
+                    </table>
                 </h:form>
             </p:dialog>
         </ui:define>

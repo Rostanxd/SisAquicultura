@@ -3,6 +3,7 @@ package es.desarrollo.hibernate.dao;
 import es.desarrollo.hibernate.entities.aceiteQuemado;
 import es.desarrollo.hibernate.entities.controlAlimentoPiscina;
 import es.desarrollo.hibernate.entities.empresa;
+import es.desarrollo.hibernate.entities.usuario;
 import es.desarrollo.hibernate.idao.IControlAlimentoPiscina;
 
 import javax.persistence.EntityManager;
@@ -88,10 +89,18 @@ public class controlAlimentoPiscinaDAO implements IControlAlimentoPiscina {
     }
 
     @Override
-    public List<controlAlimentoPiscina> listar() {
+    public List<controlAlimentoPiscina> listar(usuario usuario) {
         EntityManager em = emf.createEntityManager();
-        Query qry = em.createQuery("SELECT c " +
-                "FROM controlAlimentoPiscina AS c");
+        Query qry;
+        if (usuario.getAcceso().getId().equals("01")){
+            qry = em.createQuery("SELECT c " +
+                    "FROM controlAlimentoPiscina AS c " +
+                    "INNER JOIN empresaUsuario AS eu " +
+                    "   ON (c.emp_ruc = eu.emp_ruc)");
+        }else{
+            qry = em.createQuery("SELECT c " +
+                    "FROM controlAlimentoPiscina AS c");
+        }
         return (List<controlAlimentoPiscina>) qry.getResultList();
     }
 }

@@ -66,6 +66,13 @@ public class menuBean {
             model.addElement(submenu);
         }
 
+        DefaultSubMenu submenu = new DefaultSubMenu("Sistema");
+        DefaultMenuItem item = new DefaultMenuItem("Salir");
+        item.setUrl("");
+        item.setIcon("ui-icon-home");
+        submenu.addElement(item);
+        model.addElement(submenu);
+
         /*
         model = new DefaultMenuModel();
 

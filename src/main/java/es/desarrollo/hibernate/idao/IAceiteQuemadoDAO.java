@@ -1,6 +1,7 @@
 package es.desarrollo.hibernate.idao;
 
 import es.desarrollo.hibernate.entities.aceiteQuemado;
+import es.desarrollo.hibernate.entities.usuario;
 
 import java.util.List;
 
@@ -12,6 +13,6 @@ public interface IAceiteQuemadoDAO {
 
     boolean eliminar(aceiteQuemado aceiteQuemado, String usuario);
 
-    List<aceiteQuemado> listar();
+    List<aceiteQuemado> listar(usuario usuario);
 
 }

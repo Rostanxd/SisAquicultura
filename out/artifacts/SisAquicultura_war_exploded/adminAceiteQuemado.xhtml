@@ -16,7 +16,7 @@
                 <p:dataTable id="dataAceiteQuemado" var="aceite" value="#{aceiteQuemadoBean.listAq}"
                              selectionMode="single" selection="#{aceiteQuemadoBean.aq}" rowKey="#{aceite.empresa.ruc}_#{aceite.acq_mes}"
                              style="font-size: smaller; width: auto;" emptyMessage="No hay datos." scrollable="true" scrollHeight="500px">
-                    <f:facet name="header"  >
+                    <f:facet name="header">
                         Aceite Quemado
                     </f:facet>
                     <p:column headerText="Empresa" filterBy="#{aceite.empresa.nombre}" filterMatchMode="contains" style="width: 50px">
@@ -40,6 +40,12 @@
                                          update=":dlgAceite" disabled="#{aceiteQuemadoBean.usuario.getAcceso().id ne '01'}"/>
                         <p:commandButton value="#{aceiteQuemadoBean.setAdminAccion()}" id="modificar" actionListener="#{aceiteQuemadoBean.setDialogAccion('UPD')}" icon="ui-icon-disk"
                                          oncomplete="PF('wdgAceite').show();" update=":dlgAceite" />
+                        <div style="float:right">
+                            <h:commandLink>
+                                <p:graphicImage url="resources/images/excel.png" width="24"/>
+                                <p:dataExporter type="xls" target="dataAceiteQuemado" fileName="ListadoAceiteQuemado" postProcessor="#{aceiteQuemadoBean.postProcessXLS}"/>
+                            </h:commandLink>
+                        </div>
                     </f:facet>
                 </p:dataTable>
             </h:form>
@@ -119,9 +125,22 @@
                             </p:column>
                         </p:row>
                     </p:panelGrid>
-                    <p:commandButton value="#{aceiteQuemadoBean.btnAccion}" action="#{aceiteQuemadoBean.operar()}"
-                                     update=":dialogForm, :form" disabled="#{aceiteQuemadoBean.setDisabledBtnAccion()}"/>
-                    <p:commandButton value="Cerrar" oncomplete="PF('wdgAceite').hide()" immediate="true"/>
+                    <table>
+                        <tr>
+                            <td>
+                                <p:commandButton value="#{aceiteQuemadoBean.btnAccion}" action="#{aceiteQuemadoBean.operar()}"
+                                                 update=":dialogForm, :form" disabled="#{aceiteQuemadoBean.setDisabledBtnAccion()}"/>
+                            </td>
+                            <td>
+                                <p:commandButton value="Cerrar" oncomplete="PF('wdgAceite').hide()" immediate="true"/>
+                            </td>
+                            <td>
+                                <h:commandLink action="#{aceiteQuemadoBean.generarExcel()}">
+                                    <p:graphicImage url="resources/images/excel.png" width="24"/>
+                                </h:commandLink>
+                            </td>
+                        </tr>
+                    </table>
                 </h:form>
             </p:dialog>
         </ui:define>

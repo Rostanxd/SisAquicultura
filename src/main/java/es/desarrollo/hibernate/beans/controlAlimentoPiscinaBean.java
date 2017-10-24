@@ -1,11 +1,17 @@
 package es.desarrollo.hibernate.beans;
 
+import es.desarrollo.excels.generaExcelControlAlimentoPiscina;
 import es.desarrollo.hibernate.dao.controlAlimentoPiscinaDAO;
 import es.desarrollo.hibernate.dao.usuarioDAO;
 import es.desarrollo.hibernate.entities.controlAlimentoPiscina;
 import es.desarrollo.hibernate.entities.empresa;
 import es.desarrollo.hibernate.entities.usuario;
 import es.desarrollo.servicio.Utils;
+import org.apache.poi.hssf.usermodel.HSSFCellStyle;
+import org.apache.poi.hssf.usermodel.HSSFRow;
+import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.hssf.util.HSSFColor;
 
 import javax.annotation.PostConstruct;
 import javax.faces.application.FacesMessage;
@@ -58,7 +64,7 @@ public class controlAlimentoPiscinaBean {
 
     private void listarControlAlimentoPiscina(){
         controlAlimentoPiscinaDAO capDao = new controlAlimentoPiscinaDAO();
-        this.listCap = capDao.listar();
+        this.listCap = capDao.listar(this.usuario);
     }
 
     public String setDialogAccion(String accion){
@@ -168,6 +174,22 @@ public class controlAlimentoPiscinaBean {
         estado = this.btnAccion.equals("Ingresar") && this.usuario.getAcceso().getId().equals("01") ||
                 this.btnAccion.equals("Revisar") && this.usuario.getAcceso().getId().equals("02");
         return !estado;
+    }
+
+    public void postProcessXLS(Object document) {
+        HSSFWorkbook wb = (HSSFWorkbook) document;
+        HSSFSheet sheet = wb.getSheetAt(0);
+        HSSFRow header = sheet.getRow(0);
+        HSSFCellStyle cellStyle = wb.createCellStyle();
+        cellStyle.setFillForegroundColor(HSSFColor.GREEN.index);
+        cellStyle.setFillPattern(HSSFCellStyle.SOLID_FOREGROUND);
+        for(int i=0; i < header.getPhysicalNumberOfCells();i++) {
+            header.getCell(i).setCellStyle(cellStyle);
+        }
+    }
+
+    public void generarExcel(){
+        generaExcelControlAlimentoPiscina.generaExcel(this.capUpd);
     }
 
 //    GETTER Y SETTER

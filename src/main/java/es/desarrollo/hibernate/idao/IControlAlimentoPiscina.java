@@ -1,6 +1,8 @@
 package es.desarrollo.hibernate.idao;
 
 import es.desarrollo.hibernate.entities.controlAlimentoPiscina;
+import es.desarrollo.hibernate.entities.usuario;
+
 import java.util.List;
 
 public interface IControlAlimentoPiscina {
@@ -11,6 +13,6 @@ public interface IControlAlimentoPiscina {
 
     boolean eliminar(controlAlimentoPiscina controlAlimentoPiscina, String usuario);
 
-    List<controlAlimentoPiscina> listar();
+    List<controlAlimentoPiscina> listar(usuario usuario);
 
 }
