@@ -2,6 +2,8 @@ package es.desarrollo.servicio;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by Rostan on 15/08/2017.
@@ -133,5 +135,32 @@ public class Utils {
         String newstring = new SimpleDateFormat("yyyy-MM-dd").format(date);
         return newstring;
 
+    }
+
+    public static Map<Integer, String> listarMeses(){
+        Map<Integer, String> listMeses;
+        listMeses = new HashMap<Integer, String>();
+        listMeses.put(1, "Enero");
+        listMeses.put(2,"Febrero");
+        listMeses.put(3,"Marzo");
+        listMeses.put(4,"Abril");
+        listMeses.put(5,"Mayo");
+        listMeses.put(6,"Junio");
+        listMeses.put(7,"Julio");
+        listMeses.put(8,"Agosto");
+        listMeses.put(9,"Septiembre");
+        listMeses.put(10,"Octubre");
+        listMeses.put(11,"Noviembre");
+        listMeses.put(12,"Diciembre");
+        return listMeses;
+    }
+
+    public static Map<String, String> listarEstado(){
+        Map<String, String> listEstados;
+        listEstados = new HashMap<String, String>();
+        listEstados.put("E", "Pendiente");
+        listEstados.put("A", "Activo");
+        listEstados.put("R", "Revisado");
+        return listEstados;
     }
 }

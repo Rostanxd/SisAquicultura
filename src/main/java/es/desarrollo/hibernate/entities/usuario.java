@@ -33,9 +33,9 @@ public class usuario {
     @Column(name = "usr_fec_modificacion")
     private Date fechaModificacion;
 
-    @OneToOne
+    @OneToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "acc_codigo")
-    private acceso acceso;
+    private acceso acceso = new acceso();
 
     @OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL)
     private List<empresaUsuario> listEmpresasUsuarios;

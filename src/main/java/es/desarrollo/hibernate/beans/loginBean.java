@@ -21,6 +21,8 @@ public class loginBean {
 
     private usuario usuario = new usuario();
 
+    private usuario usuarioUpd = new usuario();
+
     //    METODOS
     public String usuarioLogin() {
         String res = "";
@@ -34,7 +36,12 @@ public class loginBean {
 
             message = new FacesMessage(FacesMessage.SEVERITY_INFO, "Bienvenido!", "Usuario.");
 
-            res = "home.xhtml";
+            this.usuarioUpd = usuarioDAO.buscaUsuarioId(this.usuario.getId());
+            if (this.usuarioUpd.getAcceso().getId().equals("02")){
+                res = "homeRevisor.xhtml";
+            }else {
+                res = "home.xhtml";
+            }
         }else {
             loggedIn = false;
             message = new FacesMessage(FacesMessage.SEVERITY_WARN, "Error de Inicio", "Usuario o contraseña incorrecta.");

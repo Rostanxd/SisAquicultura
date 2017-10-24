@@ -49,9 +49,10 @@ public class aceiteQuemadoBean {
         this.usuario = usuarioDAO.buscaUsuarioId((String) sessionMap.get("usuario"));
 
         this.listarAceiteQuemedo();
-        this.empresasUsuario();
-        this.cargarMeses();
-        this.cargarEstados();
+
+        this.listEmpresas = usuarioDAO.listarEmpresasUsr(this.usuario);
+        this.listMeses = Utils.listarMeses();
+        this.listEstados = Utils.listarEstado();
     }
 
 //    METODOS
@@ -63,34 +64,6 @@ public class aceiteQuemadoBean {
     private void listarAceiteQuemedo(){
         aceiteQuemadoDAO aqd = new aceiteQuemadoDAO();
         this.listAq = aqd.listar();
-    }
-
-    private void empresasUsuario(){
-        usuarioDAO usuarioDAO = new usuarioDAO();
-        this.listEmpresas = usuarioDAO.listarEmpresasUsr(this.usuario);
-    }
-
-    private void cargarMeses(){
-        listMeses = new HashMap<Integer, String>();
-        listMeses.put(1, "Enero");
-        listMeses.put(2,"Febrero");
-        listMeses.put(3,"Marzo");
-        listMeses.put(4,"Abril");
-        listMeses.put(5,"Mayo");
-        listMeses.put(6,"Junio");
-        listMeses.put(7,"Julio");
-        listMeses.put(8,"Agosto");
-        listMeses.put(9,"Septiembre");
-        listMeses.put(10,"Octubre");
-        listMeses.put(11,"Noviembre");
-        listMeses.put(12,"Diciembre");
-    }
-
-    private void cargarEstados(){
-        listEstados = new HashMap<String, String>();
-        listEstados.put("E", "Pendiente");
-        listEstados.put("A", "Activo");
-        listEstados.put("R", "Revisado");
     }
 
     public void operar(){

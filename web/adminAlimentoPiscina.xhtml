@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+    <title>Sistema de Aquicultura 1.0</title>
+</h:head>
+<h:body>
+    <ui:composition template="./WEB-INF/templates/plantilla.xhtml">
+        <ui:define name="content">
+            <h:form id="form">
+                <p:dataTable id="dataAlimentoPiscina" var="piscina" value="#{controlAlimentoPiscinaBean.listCap}"
+                             selectionMode="single" selection="#{controlAlimentoPiscinaBean.cap}"
+                             rowKey="#{piscina.empresa.ruc}_#{piscina.acp_mes}"
+                             style="font-size: smaller; width: auto;" emptyMessage="No hay datos."
+                             scrollable="true" scrollHeight="500px">
+                    <f:facet name="header"  >
+                        Control Alimento Piscina
+                    </f:facet>
+                    <p:column headerText="Empresa" filterBy="#{piscina.empresa.nombre}"
+                              filterMatchMode="contains" style="width: 50px">
+                        <p:outputLabel value="#{piscina.empresa.nombre}"/>
+                    </p:column>
+                    <p:column headerText="Nombre" filterBy="#{piscina.mesString()}"
+                              filterMatchMode="contains" style="width: 150px">
+                        <p:outputLabel value="#{piscina.mesString()}"/>
+                    </p:column>
+                    <p:column headerText="Fec. Ingreso" style="width: 150px">
+                        <p:outputLabel value="#{piscina.fechaIngresoFormatted()}"/>
+                    </p:column>
+                    <p:column headerText="Estado" style="width: 150px">
+                        <p:outputLabel value="#{piscina.estadoString()}"/>
+                    </p:column>
+                    <p:column headerText="Observacion" style="width: 300px">
+                        <p:outputLabel value="#{piscina.fichaObservacion}"/>
+                    </p:column>
+                    <f:facet name="footer">
+                        <p:commandButton value="Ingresar" id="ingresar"
+                                         actionListener="#{controlAlimentoPiscinaBean.setDialogAccion('INS')}"
+                                         icon="ui-icon-disk" oncomplete="PF('wdgAliPiscina').show();"
+                                         update=":dlgAliPiscina"
+                                         disabled="#{controlAlimentoPiscinaBean.usuario.getAcceso().id ne '01'}"/>
+                        <p:commandButton value="#{aceiteQuemadoBean.setAdminAccion()}"
+                                         id="modificar"
+                                         actionListener="#{controlAlimentoPiscinaBean.setDialogAccion('UPD')}"
+                                         icon="ui-icon-disk"
+                                         oncomplete="PF('wdgAliPiscina').show();"
+                                         update=":dlgAliPiscina" />
+                    </f:facet>
+                </p:dataTable>
+            </h:form>
+
+            <p:dialog id="dlgAliPiscina" header="Control Alimento Piscina"
+                      widgetVar="wdgAliPiscina" modal="true"
+                      width="685px" style="font-size: smaller">
+                <h:form id="dialogForm">
+                    <p:messages id="messages" showDetail="true" autoUpdate="true" closable="true" />
+                    <p:panelGrid>
+                        <p:row>
+                            <p:column>
+                                <p:outputLabel value="Empresa" style="font-weight: bold; color: darkred" />
+                            </p:column>
+                            <p:column>
+                                <p:selectOneMenu id="empresa"
+                                                 value="#{controlAlimentoPiscinaBean.capUpd.empresa}"
+                                                 converter="omnifaces.SelectItemsConverter"
+                                                 required="true" requiredMessage="Seleccione una empresa!"
+                                                 disabled="#{controlAlimentoPiscinaBean.capUpd.estado ne 'E'}">
+                                    <f:selectItem itemLabel="Seleccione..." itemValue="#{null}" />
+                                    <f:selectItems value="#{controlAlimentoPiscinaBean.listEmpresas}" var="empresa"
+                                                   itemLabel="#{empresa.nombre}" itemValue="#{empresa}"/>
+                                </p:selectOneMenu>
+                            </p:column>
+                            <p:column>
+                                <p:outputLabel value="Mes" style="font-weight: bold; color: darkred" />
+                            </p:column>
+                            <p:column>
+                                <p:selectOneMenu id="mes" value="#{controlAlimentoPiscinaBean.mes}"
+                                                 disabled="#{controlAlimentoPiscinaBean.capUpd.estado ne 'E'}"
+                                                 required="true" requiredMessage="Seleccione una mes!">
+                                    <f:selectItem itemLabel="Seleccione..." itemValue="#{null}" noSelectionOption="true"/>
+                                    <f:selectItems value="#{controlAlimentoPiscinaBean.listMeses}"
+                                                   var="mes" itemLabel="#{mes}"/>
+                                </p:selectOneMenu>
+                            </p:column>
+                        </p:row>
+                        <p:row>
+                            <p:column>
+                                <p:outputLabel value="Fecha Ingreso" style="font-weight: bold;" />
+                            </p:column>
+                            <p:column>
+                                <p:calendar id="inline" value="#{controlAlimentoPiscinaBean.capUpd.fechaIngreso}"
+                                            pattern="dd/MM/yyyy"
+                                            disabled="#{controlAlimentoPiscinaBean.capUpd.estado ne 'E'}"/>
+                            </p:column>
+                            <p:column>
+                                <p:outputLabel value="Estado" style="font-weight: bold;" />
+                            </p:column>
+                            <p:column>
+                                <p:selectOneMenu id="estado" value="#{controlAlimentoPiscinaBean.estado}" disabled="true">
+                                    <f:selectItem itemLabel="Seleccione..." itemValue="#{null}" noSelectionOption="true" />
+                                    <f:selectItems value="#{controlAlimentoPiscinaBean.listEstados}" var="estado"
+                                                   itemLabel="#{estado}"/>
+                                </p:selectOneMenu>
+                            </p:column>
+                        </p:row>
+                        <p:row>
+                            <p:column>
+                                <p:outputLabel value="Piscina" style="font-weight: bold;" />
+                            </p:column>
+                            <p:column>
+                                <p:inputText value="#{controlAlimentoPiscinaBean.capUpd.fichaPiscina}"
+                                             disabled="#{controlAlimentoPiscinaBean.setDiabledElemento('piscina')}"
+                                             required="true" requiredMessage="Especifique piscina!"/>
+                            </p:column>
+                            <p:column>
+                                <p:outputLabel value="Hectareas" style="font-weight: bold;" />
+                            </p:column>
+                            <p:column>
+                                <p:inputText value="#{controlAlimentoPiscinaBean.capUpd.fichaHectareas}"
+                                             disabled="#{controlAlimentoPiscinaBean.setDiabledElemento('hectarea')}"
+                                             required="true" requiredMessage="Especifique hectárea!"/>
+                            </p:column>
+                        </p:row>
+                        <p:row>
+                            <p:column>
+                                <p:outputLabel value="Corridas" style="font-weight: bold;" />
+                            </p:column>
+                            <p:column>
+                                <p:inputText value="#{controlAlimentoPiscinaBean.capUpd.fichaCorridas}"
+                                             disabled="#{controlAlimentoPiscinaBean.setDiabledElemento('corrida')}"
+                                             required="true" requiredMessage="Especifique corridas!"/>
+                            </p:column>
+                            <p:column>
+                                <p:outputLabel value="Tipo Siembra" style="font-weight: bold;" />
+                            </p:column>
+                            <p:column>
+                                <p:inputText value="#{controlAlimentoPiscinaBean.capUpd.fichaTipoSiembra}"
+                                             disabled="#{controlAlimentoPiscinaBean.setDiabledElemento('tipoSiembra')}"
+                                             required="true" requiredMessage="Especifique tipo siembra!"/>
+                            </p:column>
+                        </p:row>
+                        <p:row>
+                            <p:column>
+                                <p:outputLabel value="Prv. Larba" style="font-weight: bold;" />
+                            </p:column>
+                            <p:column>
+                                <p:inputText value="#{controlAlimentoPiscinaBean.capUpd.fichaProveedorLarba}"
+                                             disabled="#{controlAlimentoPiscinaBean.setDiabledElemento('prvLarba')}"
+                                             required="true" requiredMessage="Especifique prv. larba!"/>
+                            </p:column>
+                            <p:column>
+                                <p:outputLabel value="Origen Nauplio" style="font-weight: bold;" />
+                            </p:column>
+                            <p:column>
+                                <p:inputText value="#{controlAlimentoPiscinaBean.capUpd.fichaOrigenNauplio}"
+                                             disabled="#{controlAlimentoPiscinaBean.setDiabledElemento('origenNauplio')}"
+                                             required="true" requiredMessage="Especifique origen nauplio!"/>
+                            </p:column>
+                        </p:row>
+                        <p:row>
+                            <p:column>
+                                <p:outputLabel value="Densidad" style="font-weight: bold;" />
+                            </p:column>
+                            <p:column>
+                                <p:inputText value="#{controlAlimentoPiscinaBean.capUpd.fichaDensidad}"
+                                             disabled="#{controlAlimentoPiscinaBean.setDiabledElemento('densidad')}"
+                                             required="true" requiredMessage="Especifique densidad!"/>
+                            </p:column>
+                            <p:column>
+                                <p:outputLabel value="Días cultivo" style="font-weight: bold;" />
+                            </p:column>
+                            <p:column>
+                                <p:inputText value="#{controlAlimentoPiscinaBean.capUpd.fichaDiasCultivo}"
+                                             disabled="#{controlAlimentoPiscinaBean.setDiabledElemento('diasCultivo')}"
+                                             required="true" requiredMessage="Especifique días cultivo!"/>
+                            </p:column>
+                        </p:row>
+                        <p:row>
+                            <p:column>
+                                <p:outputLabel value="Peso Camaron (Kg.)" style="font-weight: bold;" />
+                            </p:column>
+                            <p:column>
+                                <p:inputText value="#{controlAlimentoPiscinaBean.capUpd.fichaPesoCamaron}"
+                                             disabled="#{controlAlimentoPiscinaBean.setDiabledElemento('pesoCamaron')}"
+                                             required="true" requiredMessage="Especifique peso camaron!"/>
+                            </p:column>
+                            <p:column>
+                                <p:outputLabel value="Balanceado" style="font-weight: bold;" />
+                            </p:column>
+                            <p:column>
+                                <p:inputText value="#{controlAlimentoPiscinaBean.capUpd.fichaTiposBalanceado}"
+                                             disabled="#{controlAlimentoPiscinaBean.setDiabledElemento('tipoBalanceado')}"
+                                             required="true" requiredMessage="Especifique tipo balanceado!"/>
+                            </p:column>
+                        </p:row>
+                        <p:row>
+                            <p:column>
+                                <p:outputLabel value="Dosis libras" style="font-weight: bold;" />
+                            </p:column>
+                            <p:column colspan="3">
+                                <p:inputText value="#{controlAlimentoPiscinaBean.capUpd.fichaDosisLibras}"
+                                             disabled="#{controlAlimentoPiscinaBean.setDiabledElemento('dosisLibras')}"
+                                             required="true" requiredMessage="Especifique dosis libra!"/>
+                            </p:column>
+                        </p:row>
+                        <p:row>
+                            <p:column colspan="4">
+                                <p:outputLabel value="Otros Insumos" style="color: cadetblue;font-weight: bold"></p:outputLabel>
+                            </p:column>
+                        </p:row>
+                        <p:row>
+                            <p:column>
+                                <p:outputLabel value="Carbonato" style="font-weight: bold;" />
+                            </p:column>
+                            <p:column colspan="3">
+                                <p:inputTextarea rows="3" cols="60" value="#{controlAlimentoPiscinaBean.capUpd.fichaOtrosInsumosCalCarbonato}"
+                                                 disabled="#{controlAlimentoPiscinaBean.setDiabledElemento('insCarbonato')}"
+                                                 required="true" requiredMessage="Especifique insumo carbonato!"/>
+                            </p:column>
+                        </p:row>
+                        <p:row>
+                            <p:column>
+                                <p:outputLabel value="Bacterias" style="font-weight: bold;" />
+                            </p:column>
+                            <p:column colspan="3">
+                                <p:inputTextarea rows="3" cols="60" value="#{controlAlimentoPiscinaBean.capUpd.fichaOtrosInsBacteria}"
+                                                 disabled="#{controlAlimentoPiscinaBean.setDiabledElemento('insBacteria')}"
+                                                 required="true" requiredMessage="Especifique insumo bacteria!"/>
+                            </p:column>
+                        </p:row>
+                        <p:row>
+                            <p:column>
+                                <p:outputLabel value="Desparacitantes" style="font-weight: bold;" />
+                            </p:column>
+                            <p:column colspan="3">
+                                <p:inputTextarea rows="3" cols="60" value="#{controlAlimentoPiscinaBean.capUpd.fichaOtrosInsDesparacitantes}"
+                                                 disabled="#{controlAlimentoPiscinaBean.setDiabledElemento('insDesparacitante')}"
+                                                 required="true" requiredMessage="Especifique insumo desparacitante!"/>
+                            </p:column>
+                        </p:row>
+                        <p:row>
+                            <p:column>
+                                <p:outputLabel value="Vitamina" style="font-weight: bold;" />
+                            </p:column>
+                            <p:column colspan="3">
+                                <p:inputTextarea rows="3" cols="60" value="#{controlAlimentoPiscinaBean.capUpd.fichaOtrosInsVitamina}"
+                                                 disabled="#{controlAlimentoPiscinaBean.setDiabledElemento('insVitamina')}"
+                                                 required="true" requiredMessage="Especifique insumo vitamina!"/>
+                            </p:column>
+                        </p:row>
+                        <p:row>
+                            <p:column colspan="4">
+                                <p:outputLabel value="Revisor" style="color: cadetblue;font-weight: bold"></p:outputLabel>
+                            </p:column>
+                        </p:row>
+                        <p:row>
+                            <p:column>
+                                <p:outputLabel value="Observación" style="font-weight: bold;" />
+                            </p:column>
+                            <p:column colspan="3">
+                                <p:inputTextarea rows="3" cols="60" value="#{controlAlimentoPiscinaBean.capUpd.fichaObservacion}"
+                                                 disabled="#{controlAlimentoPiscinaBean.setDiabledElemento('observacion')}"/>
+                            </p:column>
+                        </p:row>
+                    </p:panelGrid>
+                    <p:commandButton value="#{controlAlimentoPiscinaBean.btnAccion}"
+                                     action="#{controlAlimentoPiscinaBean.operar()}"
+                                     update=":dialogForm, :form"
+                                     disabled="#{controlAlimentoPiscinaBean.setDisabledBtnAccion()}"/>
+                    <p:commandButton value="Cerrar" oncomplete="PF('wdgAliPiscina').hide()" immediate="true"/>
+                </h:form>
+            </p:dialog>
+        </ui:define>
+    </ui:composition>
+</h:body>
+</html>

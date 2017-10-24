@@ -12,7 +12,7 @@
 <h:body>
     <ui:composition template="./WEB-INF/templates/plantilla.xhtml">
         <ui:define name="content">
-            <p:outputLabel value="Bienvenido al Sistema de Acuicultura 1.0" style="font-weight: bold; color: cadetblue;"></p:outputLabel>
+            <p:chart type="pie" model="#{chartView.pieModel1}" style="width:400px;height:300px"/>
         </ui:define>
     </ui:composition>
 </h:body>

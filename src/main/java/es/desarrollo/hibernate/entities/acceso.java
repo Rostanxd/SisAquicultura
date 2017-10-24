@@ -106,4 +106,5 @@ public class acceso {
     public void setDetalles(Set<accesoDetalle> detalles) {
         this.detalles = detalles;
     }
+
 }
